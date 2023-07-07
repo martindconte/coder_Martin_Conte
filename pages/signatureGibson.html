@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700;800&family=Pathway+Gothic+One&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Saira+Extra+Condensed:wght@200;300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../multimedia/img/header-logo.svg" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/f2e78f3087.js" crossorigin="anonymous"></script>
+    <title>GCFMusic</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <h1 class="m-0"><a class="navbar-brand align-middle" href="../index.html">
+                        <img src="../multimedia/img/header-logo-menu.svg" alt="header-logo-menu" width="45" height="45"
+                            class="d-inline-block align-text-center">
+                        GCF-Music
+                    </a>
+                </h1>
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column mt-2 mt-lg-0" id="navbarSupportedContent">
+                    <div class="container-fluid d-flex">
+                        <form class="d-flex w-100 align-items-center" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <h2 class="align-items-center m-0">
+                            <a class="navbar-brand align-middle ms-5 d-none d-lg-block" href="../index.html">
+                                <img src="../multimedia/img/header-oferta-img2.svg" alt="header-oferta-img" width="45"
+                                    height="45" class="d-inline-block align-text-center">
+                                Ofertas
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="container-fluid">
+                        <ul class="navbar-nav mb-2 mb-lg-0 flex-row justify-content-around align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white d-flex align-items-center" aria-current="page"
+                                    href="#">
+                                    <img src="../multimedia/img/header-ubicacion.svg" alt="header-ubicacion" width="30"
+                                        height="30" class="d-inline-block align-text-center">
+                                    <span class="d-none d-md-block">Ubicacion</span>
+                                </a>
+                            <li class="nav-item dropdown text-white d-none d-md-block">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categorias
+                                </a>
+                                <ul class="dropdown-menu text-white">
+                                    <li><a class="dropdown-item fw-semibold" href="#">Instrumentos Electricos</a></li>
+                                    <li><a class="dropdown-item" href="../pages/catGuitarras.html">Guitarras</a></li>
+                                    <li><a class="dropdown-item" href="#">Bajos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item fw-semibold" href="#">Instrumentos a Cuerdas</a></li>
+                                    <li><a class="dropdown-item" href="#">Violines</a></li>
+                                    <li><a class="dropdown-item" href="#">Contrabajos</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Amplificadores</a></li>
+                                    <li><a class="dropdown-item" href="#">Baterías y Percusión</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white d-none d-md-block"
+                                    href="../pages/catGuitarras.html">Guitarras</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white d-none d-md-block" href="#">Bajos</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white d-none d-md-block" href="#">Baterias</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white d-none d-md-block"
+                                    href="../pages/signatureGibson.html">Signature</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Mis Compras</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="../pages/logueo.html"><img
+                                        src="../multimedia/img/header-logueo.svg" alt="header-carrito" width="30"
+                                        height="30" /></a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#"><img
+                                        src="../multimedia/img/header-carrito.svg" alt="header-carrito" width="30"
+                                        height="30" /></a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#"><img
+                                        src="../multimedia/img/header-notification.svg" alt="header-carrito.svg"
+                                        width="30" height="30" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="signature-gibson">
+            <img src="../multimedia/img/signatureGibson-gibsonlogo-black.svg" alt="signatureGibson-gibsonlogo-black">
+            <p class="m-0">Artist Adam Jones</p>
+        </div>
+        <div class="compra">
+            <div class="slide-compra">
+                <i class="fa-solid fa-caret-up"></i>
+                <img src="../multimedia/img/signature-gibson-compra-slide-img51.jpg"
+                    alt="signature-gibson-compra-slide-img51">
+                <img src="../multimedia/img/signature-gibson-compra-slide-img1.png"
+                    alt="signature-gibson-compra-slide-img1">
+                <img src="../multimedia/img/signature-gibson-compra-slide-img2.png"
+                    alt="signature-gibson-compra-slide-img2">
+                <img src="../multimedia/img/signature-gibson-compra-slide-img3.png"
+                    alt="signature-gibson-compra-slide-img3">
+                <img src="../multimedia/img/signature-gibson-compra-slide-img4.jpg"
+                    alt="signature-gibson-compra-slide-img4">
+                <img src="../multimedia/img/signature-gibson-compra-slide-img7.png"
+                    alt="signature-gibson-compra-slide-img7">
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="slide-compra-instrumento">
+                <img src="../multimedia/img/signature-gibson-compra-slide-img5.jpg"
+                    alt="signature-gibson-compra-slide-img5.jpg">
+            </div>
+            <div>
+                <p class="titulo-producto">Adam Jones 1979V2 Les Paul Custom</p>
+                <div>
+                    <p class="subtitulo-producto">Terminacion</p>
+                    <p class="descripcion">Antique Silverburst</p>
+                    <img src="../multimedia/img/signature-gibson-compra-slide-img6.jpg"
+                        alt="signature-gibson-compra-slide-img6">
+                </div>
+                <div>
+                    <p class="subtitulo-producto">Mano</p>
+                    <p class="descripcion">Derecha</p>
+                </div>
+                <p class="precio">u$s 9.999,00</p>
+                <button type="submit" class="boton">COMPRAR</button>
+            </div>
+        </div>
+        <section class="gibson__media">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/0ukDsv3pweo"
+                title="Gibson Adam Jones" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+                <iframe style="border-radius:0px" src="https://open.spotify.com/embed/album/1fvWYcbjuycyHpzNPH1Vfk?utm_source=generator" width="100%" height="315" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+        <section class="signature-gibson-img">
+            <img src="../multimedia/img/Gibson-Les-Paul-Adam-Jones-01.jpg" alt="Gibson-Les-Paul-Adam-Jones-01">
+            <img src="../multimedia/img/Gibson-Adam Jones 1979 Les Paul Custom.jpg"
+                alt="Gibson-Adam Jones 1979 Les Paul Custom">
+            <img src="../multimedia/img/Gibson-Les-Paul-Adam-Jones-02.jpg" alt="Gibson-Les-Paul-Adam-Jones-02">
+            <img src="../multimedia/img/Gibson-Les-Paul-Adam-Jones-03.jpg" alt="Gibson-Les-Paul-Adam-Jones-03">
+            <img src="../multimedia/img/Gibson-ADAM-JONES.jpeg" alt="Gibson-ADAM-JONES">
+            <img src="../multimedia/img/Gibson-Les-Paul-Adam-Jones-05.jpg" alt="Gibson-Les-Paul-Adam-Jones-05">
+            <img src="../multimedia/img/Gibson-Les-Paul-Adam-Jones-06.jpg" alt="Gibson-Les-Paul-Adam-Jones-06">
+            <img src="../multimedia/img/Gibson-Les-Paul-Adam-Jones-07.jpg" alt="Gibson-Les-Paul-Adam-Jones-07">
+            <img src="../multimedia/img/Gibson-Les-Paul-Adam-Jones-10.jpg" alt="Gibson-Les-Paul-Adam-Jones-10">
+        </section>
+
+        <section class="d-flex flex-column text-wrap m-3">
+            <div class="d-flex flex-wrap w-75 text-wrap border-bottom border-black justify-content-between">
+                <p class="ms-3 me-3 mb-0">
+                    <button class="btn especificaciones" type="button" data-bs-toggle="collapse" data-bs-target="#body"
+                        aria-expanded="false" aria-controls="body">
+                        Body
+                    </button>
+                </p>
+                <p class="ms-3 me-3 mb-0">
+                    <button class="btn especificaciones" type="button" data-bs-toggle="collapse" data-bs-target="#neck"
+                        aria-expanded="false" aria-controls="body">
+                        Neck
+                    </button>
+                </p>
+                <p class="ms-3 me-3 mb-0">
+                    <button class="btn especificaciones" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#hardware" aria-expanded="false" aria-controls="hardware">
+                        Hardware
+                    </button>
+                </p>
+                <p class="ms-3 me-3 mb-0">
+                    <button class="btn especificaciones" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#electronic" aria-expanded="false" aria-controls="electronic">
+                        Electronic
+                    </button>
+                </p>
+                <p class="ms-3 me-3 mb-0">
+                    <button class="btn especificaciones" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#miscellaneous" aria-expanded="false" aria-controls="miscellaneous">
+                        Miscellaneous
+                    </button>
+                </p>
+            </div>
+            <div class="especificaciones text-wrap w-75">
+                <div class="collapse collapse-horizontal" id="body">
+                    <div class="especificaciones-body">
+                        <div class="container-fluid text-start">
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Body Style</h4>
+                                    <p>Les Paul</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Body Shape</h4>
+                                    <p>Les Paul</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Body Material</h4>
+                                    <p>Solid Mahogany</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Top</h4>
+                                    <p>2 Piece Maple</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Binding</h4>
+                                    <p>7-ply Top (White and Black), 5-ply Back and Headstock (White and Black)</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Body Finish</h4>
+                                    <p>Murphy Lab Aged Nitrocellulose Lacquer</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-12">
+                                    <h4>Weight Relief</h4>
+                                    <p>None</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="neck">
+                    <div class="epecificaciones-neck">
+                        <div class="container-fluid text-start">
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Profile</h4>
+                                    <p>Medium C</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Scale Length</h4>
+                                    <p>628.65 mm / 24.75 in</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Fingerboard Material</h4>
+                                    <p>Ebony</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <div>
+                                        <h4>Fingerboard Radius</h4>
+                                        <p>304.8 mm / 12 in</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Fret Count</h4>
+                                    <p>22</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Frets</h4>
+                                    <p>.110″ X .057" (2.79 X 1.45 mm) 18% Nickel Silver Alloy</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Nut Material</h4>
+                                    <p>Bone</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Nut Width</h4>
+                                    <p>42.86 mm / 1.687 in</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Inlays</h4>
+                                    <p>Mother of Pearl Block</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-12">
+                                    <h4>Joint</h4>
+                                    <p>Hide Glue Fit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="hardware">
+                    <div class="especificaciones-hardare">
+                        <div class="container-fluid text-start">
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Finish</h4>
+                                    <p>Lightly Aged Chrome</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Bridge</h4>
+                                    <p>Tune-O-Matic</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Tailpiece</h4>
+                                    <p>Stop Bar</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Tuning Machines</h4>
+                                    <p>Schaller M6 with Large Buttons</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Pickguard</h4>
+                                    <p>None</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Truss Rod</h4>
+                                    <p>Adjustable</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Truss Rod Cover</h4>
+                                    <p>70s Custom</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Control Knobs</h4>
+                                    <p>Black Speed Knobs</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Switch Tip</h4>
+                                    <p>Chrome</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Switch washer</h4>
+                                    <p>Thick Black</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Jack Plate Cover</h4>
+                                    <p>Chrome</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Control Covers</h4>
+                                    <p>Black</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4> Strap Buttons</h4>
+                                    <p>Diamond-Shaped</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Mounting Rings</h4>
+                                    <p>Black</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Pickup Covers</h4>
+                                    <p>Neck: Chrome, Bridge: None</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse collapse-horizontal" id="electronic">
+                    <div class=" especificaciones-electronic">
+                        <div class="container-fluid text-start">
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Neck Pickup</h4>
+                                    <p>Custombucker (Reverse-Mounted)</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Bridge Pickup</h4>
+                                    <p>Custom-Wound Seymour Duncan DDJ</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Controls</h4>
+                                    <p>2 Volume, 2 Tone; 1 DiMarzio 500 k Volume Pot (Bridge), and 3 CTS Pots, .047uF
+                                        Orange
+                                        DropCapacitors</p>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Pickup Selector</h4>
+                                    <p>3-Way Switchcraft</p>
+                                </div>
+                                <div class="col-md-8">
+                                    <h4>Output Jack</h4>
+                                    <p>1/4" Switchcraft</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" collapse collapse-horizontal" id="miscellaneous">
+                    <div class="especificaciones-miscellaneous">
+                        <div class="container-fluid text-start">
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <h4>Strings Gauge</h4>
+                                    <p>.010, .013, .017, .026, .036, .046</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Case</h4>
+                                    <p>Hardshell Case</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Accessories</h4>
+                                    <p>Adam Jones Headstock Mirror, Certificate of Authenticity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="electronica">
+                <h4><a href="#">ELECTRÓNICA, AUDIO Y VIDEO</a></h4>
+                <ul>
+                    <li><a href="#">Auriculares</a></li>
+                    <li><a href="#">Parlantes y Bafles</a></li>
+                    <li><a href="#">Monitores de Estudio</a></li>
+                    <li><a href="#">Equipos de DJ y Accesorios</a></li>
+                    <li><a href="#">Micrófonos</a></li>
+                    <li><a href="#">Estudio de Grabación</a></li>
+                    <li><a href="#">Interfaces de Audio</a></li>
+                    <li><a href="#">Tocadiscos y Accesorios</a></li>
+                    <li><a href="#">Compacteras de DJs</a></li>
+                    <li><a href="#">Bandejas</a></li>
+                    <li><a href="#">Grabadores</a></li>
+                    <li><a href="#">Amplificadores y Receivers</a></li>
+                    <li><a href="#">Monitores In-Ear</a></li>
+                </ul>
+            </div>
+            <div class="instrumentos">
+                <h4><a href="#">INSTRUMENTOS MUSICALES</a></h4>
+                <ul>
+                    <li><a href="#">Instrumentos Electricos</a></li>
+                    <li><a href="#">Guitarras Criollas</a></li>
+                    <li><a href="#">Acústicas</a></li>
+                    <li><a href="#">Bajos Electricos</a></li>
+                    <li><a href="#">Vientos</a></li>
+                    <li><a href="#">Instrumentos a Cuerdas</a></li>
+                    <li><a href="#">Amplificadores</a></li>
+                    <li><a href="#">Baterías y Percusión</a></li>
+                </ul>
+            </div>
+            <div class="teclados">
+                <h4><a href="#">TECLADOS Y PIANOS</a></h4>
+                <ul>
+                    <li><a href="#">Teclados</a></li>
+                    <li><a href="#">Pianos Digitales</a></li>
+                    <li><a href="#">Sintetizadores</a></li>
+                    <li><a href="#">Controladores Midi</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <h4><a href="#">INFO</a></h4>
+                <ul>
+                    <li><a href="#">Quienes Somos</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Como comprar</a></li>
+                </ul>
+            </div>
+            <div class="contacto">
+                <h4><a>CONTACTO</a></h4>
+                <ul>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5491112345678" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+54 9 11 1234-5678</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-sharp fa-regular fa-envelope"></i>
+                            <span>ventas@correo.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://goo.gl/maps/yEDbLb2jq8CBCeSf6" target="_blank">
+                            <img src="../multimedia/img/header-ubicacion.svg" alt="header-ubicacion" />
+                            <span>Av. Siempre Vivas 742</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h4><a href="">SEGUINOS</a></h4>
+                <ul>
+                    <li><a href=""><img src="../multimedia/img/main-footer-instagram.png"
+                                alt="main-footer-instagram" /></a>
+                    </li>
+                    <li><a href=""><img src="../multimedia/img/main-footer-tiktok.svg" alt="main-footer-tiktok" /></a>
+                    </li>
+                    <li><a href=""><img src="../multimedia/img/main-footer-twitch.png" alt="main-footer-twitch" /></a>
+                    </li>
+                    <li><a href=""><img src="../multimedia/img/main-footer-facebook.png"
+                                alt="main-footer-facebook" /></a>
+                    </li>
+                    <li><a href=""><img src="../multimedia/img/main-footer-youtube.svg" alt="main-footer-youtube" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div>
+        <p class="descripcion">Martin Daniel Conte // Comision 56400</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1002 @@
+/* ----------------- Iniciacion  -----------------*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    /* Sacar el subrayado del link */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------- Boopstrap --------------------*/
+/* ------------- Boopstrap header nav ---------------*/
+
+.bg-body-tertiary {
+    background: radial-gradient(circle, rgba(150, 30, 30, 1) 0%, rgba(0, 0, 0, 1) 75%);
+}
+
+.navbar {
+    --bs-navbar-brand-hover-color: #b9b9b9;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px 5px 0px 3px;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #961e1e;
+    color: white;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.btn-outline-success {
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #FFFFFF;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+input {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* ---------------- Boopstrap main ------------------*/
+
+.carousel {
+    background-color: black;
+}
+
+/* ------------------ Tipografias -------------------*/
+
+.precio {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+.descripcion {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #262218;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 2rem;
+    margin-top: 10px;
+}
+
+.boton-compra {
+    display: block;
+    background-color: #08002c;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 10px auto 0px auto;
+    padding: 5px;
+    border-radius: .5rem;
+    width: 80%;
+}
+
+.titulo-producto {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.subtitulo-producto {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* --------------------- header  --------------------*/
+
+.header {
+    background: radial-gradient(circle, rgba(150, 30, 30, 1) 0%, rgba(0, 0, 0, 1) 75%);
+    font-family: 'Rajdhani', sans-serif;
+    padding: 15px;
+}
+
+/* ---------------------- main  ---------------------*/
+
+.slide-ofertas {
+    background-image: url('../multimedia/img/section-slide-background-img1.jpg');
+    background-size: cover;
+    background-position: center -14px;
+    padding: 20px;
+}
+
+.ofertas-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Rajdhani', sans-serif; */
+    /* font-family: 'Saira Condensed', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.ofertas-titulo h2 {
+    margin: 0px;
+}
+
+.ofertas-titulo img {
+    height: 45px;
+    padding: 0px 20px;
+}
+
+.slide-ofertas-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.slide-ofertas-img img {
+    width: 15%;
+    min-width: 200px;
+}
+
+.oportunidades {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.oportunidades a {
+    max-width: 200px;
+}
+
+.fender-gibson {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 50px 30px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.fender-gibson img {
+    width: 40vw;
+    min-width: 300px;
+}
+
+.slide-brand {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.slide-brand img {
+    width: 35vw;
+    height: 200px;
+    padding: 20px 30px;
+}
+
+.productos-destacados {
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.productos-destacados h3 {
+    font-size: 40px;
+    color: black;
+    font-weight: 800;
+    padding-bottom: 30px;
+}
+
+.productos-destacados-img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.productos-destacados-img a {
+    width: 18vw;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.productos-destacados img {
+    width: 15vw;
+    min-width: 200px;
+    padding-bottom: 10px;
+}
+
+.prefooter {
+    background-image: url('../multimedia/img/main-prefooter-background2.jpg');
+    background-size: 100% 200%;
+    background-position: center center;
+    padding: 50px;
+    /* font-family: 'Rajdhani', sans-serif; */
+    font-family: 'Saira Condensed', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.prefooter input[type=email] {
+    display: block;
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 3px 0px;
+    width: 70vw;
+    border-radius: .75rem;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    margin: 30px auto;
+}
+
+.prefooter input[type=submit] {
+    display: block;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 3px 0px;
+    width: 70vw;
+    border-radius: .75rem;
+    margin: 0 auto;
+    border: none;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+
+/* --------------------- footer  --------------------*/
+
+.footer {
+    background-image: url('../multimedia/img/main-footer-background2.jpg');
+    background-size: 100% 100%;
+    background-position: top center;
+    padding: 50px;
+    color: white;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas:
+        "electronica instrumentos teclados info"
+        "electronica instrumentos redes contacto";
+}
+
+.electronica {
+    grid-area: electronica;
+}
+
+.instrumentos {
+    grid-area: instrumentos;
+}
+
+.teclados {
+    grid-area: teclados;
+}
+
+.info {
+    grid-area: info;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.redes ul li {
+    display: inline;
+}
+
+.redes img {
+    width: 35px;
+    margin: 5px;
+}
+
+.footer h4 a {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    padding-right: 10px;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    list-style: none;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
+
+/* .redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.footer i {
+    font-size: 30px;
+}
+
+/* ------------ Pagina signatureGibson --------------*/
+
+.signature-gibson {
+    display: flex;
+    background-color: black;
+    color: white;
+    /* font-family: 'Rajdhani', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.compra {
+    display: flex;
+    padding: 0px 30px;
+    margin: 50px 0px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.compra p {
+    text-align: left;
+}
+
+.compra img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.slide-compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-compra img {
+    display: block;
+    width: 60px;
+    padding-bottom: 20px;
+}
+
+.slide-compra-instrumento img {
+    height: 450px;
+    width: auto;
+}
+
+.gibson__media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+}
+
+.gibson__media iframe {
+    width: 80%;
+}
+
+/* .media {
+    position: relative;
+    padding-bottom: 56.25%;
+    
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.signature-gibson-img {
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+.signature-gibson-img img {
+    width: 30%;
+}
+
+/* .especificaciones ul {
+    display: flex;
+} */
+
+.especificaciones {
+    /* font-family: 'Gothic A1', sans-serif; */
+    font-family: 'Pathway Gothic One', sans-serif;
+    /* font-family: 'Rajdhani', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Saira Condensed', sans-serif; */
+    /* font-family: 'Saira Extra Condensed', sans-serif; */
+    font-size: 30px;
+    font-weight: 800;
+    list-style: none;
+    padding: 10px;
+}
+
+/* .especificaciones ul li {
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    list-style: none;
+    padding: 20px;
+} */
+
+/* .especificaciones div div {
+    padding: 20px 10px;
+} */
+
+.especificaciones h4 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.especificaciones p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+/* .especificaciones-body,
+.epecificaciones-neck,
+.especificaciones-hardare,
+.especificaciones-electronic,
+.especificaciones-miscellaneous {
+    display: flex;
+} */
+
+
+/* ---------------- page CompraGuitarras ------------------*/
+/* ----------------------- Aside --------------------------*/
+
+.main_page-guitarras {
+    display: flex;
+}
+
+.aside-compras {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    min-width: 200px;
+}
+
+.aside-compras h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.aside-compras-check {
+    margin-bottom: 10px
+}
+
+.aside-compras-check p {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 15px;
+    margin: 10px 0px;
+    border: 1px solid black;
+}
+
+.aside-compras-marcas p,
+.aside-compras-forma p,
+.aside-compras-cuerda-titulo {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.aside-compras h3,
+.aside-compras h4,
+.aside-compras-cuerda-descrip {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+/* ---------------------- tarjetas ------------------------*/
+
+.section-guitarras-ventas {
+    display: flex;
+    flex-direction: column;
+}
+
+.selector-ordenar {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.aside-filtro {
+    display: none;
+}
+
+.selector-ordenar label,
+.aside-filtro {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+    margin-right: 5px;
+}
+
+.aside-filtro i {
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.selector-ordenar select {
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section-guitarras-ventas-tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.section-guitarras-ventas-tarjeta div {
+    width: 20vw;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.section-guitarras-ventas-tarjeta img {
+    width: 90%;
+    min-width: 200px
+}
+
+.section-guitarras-ventas-tarjeta p {
+    font-size: 18px;
+}
+
+/* ----------------------- page login -----------------------*/
+
+.login {
+    background-image: url(../multimedia/img/login-background-.png);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.login input {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.login label {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.login input[type=submit] {
+    border: none;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+    margin: 10px 0px;
+    border-radius: .5rem;
+}
+
+.login__sesion {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    width: 30%;
+    border-right: 2px solid black;
+}
+
+.login__usuario {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    width: 30%;
+}
+
+.login__sesion p {
+    text-align: right;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.login__usuario p {
+    text-align: left;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.login__sesion form,
+.login__usuario form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.login__usuario__check {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login__usuario__check input[type=checkbox] {
+    margin: 0px;
+}
+
+.login__sesion-registrarse {
+    display: none;
+}
+
+
+/* ----------------------- media query ----------------------*/
+
+@media screen and (max-width: 992px) {
+
+    /* -------------------- header -------------------*/
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: space-between;
+    }
+
+    .header>.navbar-toggler {
+        margin-right: 20px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+    /* -------------------- footer -------------------*/
+
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        grid-template-areas:
+            "electronica instrumentos teclados"
+            "info        contacto     redes";
+    }
+
+    /* -- --------------- page login -----------------*/
+
+    .login__sesion,
+    .login__usuario {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* -- --------------- index main -----------------*/
+
+    .slide-compra {
+        display: none;
+    }
+
+    .boton {
+        padding: 10px 50px;
+        border-radius: 1rem;
+    }
+
+    .slide-ofertas-img img {
+        margin: 10px;
+    }
+
+    .oportunidades a {
+        margin: 20px;
+    }
+
+    /* -------------------- footer -------------------*/
+
+    .footer h4 a {
+        font-size: 20px;
+        padding: 0%;
+    }
+
+    .footer ul li a {
+        font-size: 16px;
+    }
+
+    /* -------------- page catGuitarras -------------*/
+
+     .aside-filtro {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        margin: 10px;
+    }
+
+    .main_page-guitarras {
+        flex-direction: row-reverse;
+    }
+
+    .aside-filtro:hover + .aside-compras {
+        background-color: #f1f1f1;
+        display: block;
+        transition: .5s;
+    }
+
+    .aside-compras:hover {
+        display: block;
+        background-color: #f1f1f1;
+    }
+
+    .aside-compras {
+        position: absolute;
+        margin-top: 40px;
+        padding: 10px;
+        display: none;
+        transition: .5s;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* ------------------ index main -----------------*/
+
+    .slide-brand img {
+        width: 35vw;
+        height: 200px;
+        padding: 0px 5px;
+    }
+
+    /* -------------------- footer -------------------*/
+    
+    .footer-grid {
+        gap: 20px;
+        grid-template-areas:
+            "electronica instrumentos teclados"
+            "electronica redes redes"
+            "info        contacto     contacto";
+    }
+
+    /* --------- page signatureGibson main -----------*/
+
+    .compra {
+        flex-direction: column;
+        padding: 0px;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .compra p {
+        text-align: center;
+    }
+
+    .boton {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .compra img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* ------------------ page login -----------------*/
+
+    .login {
+        justify-content: flex-start;
+    }
+
+    .login__sesion {
+        width: 100%;
+        border: none;
+        padding: 0px;
+        margin: 0px 40px 20px 20px;
+    }
+
+    .login__sesion p {
+        text-align: left;
+    }
+
+    .login__usuario {
+        width: 100%;
+        margin: 50px 40px 20px 20px;
+    }
+
+    .login__sesion-registrarse {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    /* -------------------- header -------------------*/
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    /* --------- page signatureGibson main -----------*/
+
+    .signature-gibson-img {
+        flex-direction: column;
+    }
+
+    .signature-gibson-img img {
+        width: 100%;
+    }
+
+    /* -------------- page catGuitarras -------------*/
+
+    .aside-compras {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    /* -------------------- header -------------------*/
+
+    .header {
+        padding: 5px;
+    }
+
+    /* -- --------------- index main -----------------*/
+
+    .ofertas-titulo {
+        margin-bottom: 10px;
+    }
+
+    .ofertas-titulo h2 {
+        font-size: 20px;
+    }
+
+    .ofertas-titulo img {
+        height: 30px;
+        padding: 0px 10px;
+    }
+
+    /* --------- page signatureGibson main -----------*/
+
+    .signature-gibson {
+        font-size: 20px;
+    }
+
+    .signature-gibson-img img {
+        width: 100%;
+    }
+
+    /* -------------------- footer -------------------*/
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer i {
+        font-size: 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "electronica instrumentos"
+            "teclados info"
+            "contacto contacto"
+            "redes redes";
+    }
+    
+}
