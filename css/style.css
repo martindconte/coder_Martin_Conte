@@ -97,9 +97,10 @@ input {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 20px;
     color: white;
-    padding: 10px 100px;
+    padding: 10px 50px;
     border-radius: 2rem;
     margin-top: 10px;
+    max-width: 250px;
 }
 
 .boton-compra {
@@ -127,6 +128,15 @@ input {
     margin-top: 20px;
 }
 
+.ofertas-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
 /* --------------------- header  --------------------*/
 
 .header {
@@ -137,22 +147,11 @@ input {
 
 /* ---------------------- main  ---------------------*/
 
-.slide-ofertas {
+.slideOfertas {
     background-image: url('../multimedia/img/section-slide-background-img1.jpg');
     background-size: cover;
     background-position: center -14px;
     padding: 20px;
-}
-
-.ofertas-titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* font-family: 'Rajdhani', sans-serif; */
-    /* font-family: 'Saira Condensed', sans-serif; */
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    color: white;
 }
 
 .ofertas-titulo h2 {
@@ -164,7 +163,7 @@ input {
     padding: 0px 20px;
 }
 
-.slide-ofertas-img {
+.slideOfertas__img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -172,7 +171,7 @@ input {
 }
 
 
-.slide-ofertas-img img {
+.slideOfertas__img img {
     width: 15%;
     min-width: 200px;
 }
@@ -217,31 +216,31 @@ input {
     padding: 20px 30px;
 }
 
-.productos-destacados {
+.productosDestacados {
     text-align: center;
     margin: 50px 20px;
 }
 
-.productos-destacados h3 {
+.productosDestacados h3 {
     font-size: 40px;
     color: black;
     font-weight: 800;
     padding-bottom: 30px;
 }
 
-.productos-destacados-img {
+.productosDestacados__img {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.productos-destacados-img a {
+.productosDestacados__img a {
     width: 18vw;
     min-width: 200px;
     margin: 20px;
 }
 
-.productos-destacados img {
+.productosDestacados img {
     width: 15vw;
     min-width: 200px;
     padding-bottom: 10px;
@@ -252,9 +251,7 @@ input {
     background-size: 100% 200%;
     background-position: center center;
     padding: 50px;
-    /* font-family: 'Rajdhani', sans-serif; */
     font-family: 'Saira Condensed', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
     color: white;
     text-align: center;
     font-size: 25px;
@@ -301,7 +298,7 @@ input {
     color: white;
 }
 
-.footer-grid {
+.footer__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
@@ -310,35 +307,35 @@ input {
         "electronica instrumentos redes contacto";
 }
 
-.electronica {
+.footer__electronica{
     grid-area: electronica;
 }
 
-.instrumentos {
+.footer__instrumentos {
     grid-area: instrumentos;
 }
 
-.teclados {
+.footer__teclados {
     grid-area: teclados;
 }
 
-.info {
+.footer__info {
     grid-area: info;
 }
 
-.contacto {
-    grid-area: contacto;
+.footer__contacto {
+    grid-area: contacto;    
 }
 
-.redes {
+.footer__redes {
     grid-area: redes;
 }
 
-.redes ul li {
+.footer__redes ul li {
     display: inline;
 }
 
-.redes img {
+.footer__redes img {
     width: 35px;
     margin: 5px;
 }
@@ -369,12 +366,6 @@ input {
     text-decoration: none;
 }
 
-/* .redes {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 .footer i {
     font-size: 30px;
 }
@@ -385,8 +376,6 @@ input {
     display: flex;
     background-color: black;
     color: white;
-    /* font-family: 'Rajdhani', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
     font-family: 'Saira Condensed', sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -440,26 +429,6 @@ input {
 .gibson__media iframe {
     width: 80%;
 }
-
-/* .media {
-    position: relative;
-    padding-bottom: 56.25%;
-    
-    height: 0;
-    overflow: hidden;
-    width: 100%;
-    background-color: black;
-}
-
-.video iframe,
-.video object,
-.video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
 
 .signature-gibson-img {
     display: flex;
@@ -768,7 +737,7 @@ input {
         padding: 20px;
     }
 
-    .footer-grid {
+    .footer__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
@@ -798,7 +767,7 @@ input {
         border-radius: 1rem;
     }
 
-    .slide-ofertas-img img {
+    .slideOfertas__img img {
         margin: 10px;
     }
 
@@ -819,7 +788,7 @@ input {
 
     /* -------------- page catGuitarras -------------*/
 
-     .aside-filtro {
+    .aside-filtro {
         display: block;
         position: absolute;
         margin: 0 auto;
@@ -830,7 +799,7 @@ input {
         flex-direction: row-reverse;
     }
 
-    .aside-filtro:hover + .aside-compras {
+    .aside-filtro:hover+.aside-compras {
         background-color: #f1f1f1;
         display: block;
         transition: .5s;
@@ -861,12 +830,12 @@ input {
     }
 
     /* -------------------- footer -------------------*/
-    
-    .footer-grid {
+
+    .footer__grid {
         gap: 20px;
         grid-template-areas:
             "electronica instrumentos teclados"
-            "electronica redes redes"
+            "electronica redes        redes"
             "info        contacto     contacto";
     }
 
@@ -930,6 +899,21 @@ input {
         font-size: 20px;
     }
 
+    /* -- --------------- index main -----------------*/
+
+    .ofertas-titulo {
+        margin-bottom: 10px;
+    }
+
+    .ofertas-titulo h2 {
+        font-size: 20px;
+    }
+
+    .ofertas-titulo img {
+        height: 30px;
+        padding: 0px 10px;
+    }
+
     /* --------- page signatureGibson main -----------*/
 
     .signature-gibson-img {
@@ -955,21 +939,6 @@ input {
         padding: 5px;
     }
 
-    /* -- --------------- index main -----------------*/
-
-    .ofertas-titulo {
-        margin-bottom: 10px;
-    }
-
-    .ofertas-titulo h2 {
-        font-size: 20px;
-    }
-
-    .ofertas-titulo img {
-        height: 30px;
-        padding: 0px 10px;
-    }
-
     /* --------- page signatureGibson main -----------*/
 
     .signature-gibson {
@@ -990,7 +959,7 @@ input {
         font-size: 16px;
     }
 
-    .footer-grid {
+    .footer__grid {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "electronica instrumentos"
@@ -998,5 +967,5 @@ input {
             "contacto contacto"
             "redes redes";
     }
-    
+
 }
