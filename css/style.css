@@ -307,7 +307,7 @@ input {
         "electronica instrumentos redes contacto";
 }
 
-.footer__electronica{
+.footer__electronica {
     grid-area: electronica;
 }
 
@@ -324,7 +324,7 @@ input {
 }
 
 .footer__contacto {
-    grid-area: contacto;    
+    grid-area: contacto;
 }
 
 .footer__redes {
@@ -383,7 +383,7 @@ input {
     align-items: center;
 }
 
-.compra {
+.compraGibson {
     display: flex;
     padding: 0px 30px;
     margin: 50px 0px;
@@ -391,33 +391,33 @@ input {
     align-items: flex-start;
 }
 
-.compra p {
+.compraGibson p {
     text-align: left;
 }
 
-.compra img {
+.compraGibson img {
     width: 30px;
     border-radius: 50%;
 }
 
-.slide-compra {
+.compraGibson__compra {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.slide-compra img {
+.compraGibson__compra img {
     display: block;
     width: 60px;
     padding-bottom: 20px;
 }
 
-.slide-compra-instrumento img {
+.compraGibson_slide img {
     height: 450px;
     width: auto;
 }
 
-.gibson__media {
+.mediaVideo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -426,8 +426,14 @@ input {
     background-color: black;
 }
 
-.gibson__media iframe {
+.mediaVideo__youtube {
     width: 80%;
+    height: 50vh;
+}
+
+.mediaVideo__spotify {
+    width: 80%;
+    height: 300px;
 }
 
 .signature-gibson-img {
@@ -437,46 +443,20 @@ input {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: -150px;
 }
 
 .signature-gibson-img img {
     width: 30%;
 }
 
-/* .especificaciones ul {
-    display: flex;
-} */
-
 .especificaciones {
-    /* font-family: 'Gothic A1', sans-serif; */
     font-family: 'Pathway Gothic One', sans-serif;
-    /* font-family: 'Rajdhani', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Saira Condensed', sans-serif; */
-    /* font-family: 'Saira Extra Condensed', sans-serif; */
     font-size: 30px;
     font-weight: 800;
     list-style: none;
     padding: 10px;
 }
-
-/* .especificaciones ul li {
-    font-family: 'Gothic A1', sans-serif;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-family: 'Rajdhani', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Saira Condensed', sans-serif;
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font-size: 35px;
-    font-weight: 800;
-    list-style: none;
-    padding: 20px;
-} */
-
-/* .especificaciones div div {
-    padding: 20px 10px;
-} */
 
 .especificaciones h4 {
     font-family: 'Pathway Gothic One', sans-serif;
@@ -492,19 +472,10 @@ input {
     margin-bottom: 0px;
 }
 
-/* .especificaciones-body,
-.epecificaciones-neck,
-.especificaciones-hardare,
-.especificaciones-electronic,
-.especificaciones-miscellaneous {
-    display: flex;
-} */
-
-
 /* ---------------- page CompraGuitarras ------------------*/
 /* ----------------------- Aside --------------------------*/
 
-.main_page-guitarras {
+.main-page-guitarras {
     display: flex;
 }
 
@@ -555,6 +526,7 @@ input {
     margin: 10px 0px;
 }
 
+/* ---------------- page CompraGuitarras ------------------*/
 /* ---------------------- tarjetas ------------------------*/
 
 .section-guitarras-ventas {
@@ -756,11 +728,7 @@ input {
 
 @media screen and (max-width: 768px) {
 
-    /* -- --------------- index main -----------------*/
-
-    .slide-compra {
-        display: none;
-    }
+    /* ------------------ index main -----------------*/
 
     .boton {
         padding: 10px 50px;
@@ -786,6 +754,12 @@ input {
         font-size: 16px;
     }
 
+    /* ------------- poge siantureGibson -------------*/
+
+    .compraGibson__compra {
+        display: none;
+    }
+
     /* -------------- page catGuitarras -------------*/
 
     .aside-filtro {
@@ -795,7 +769,7 @@ input {
         margin: 10px;
     }
 
-    .main_page-guitarras {
+    .main-page-guitarras {
         flex-direction: row-reverse;
     }
 
@@ -841,7 +815,7 @@ input {
 
     /* --------- page signatureGibson main -----------*/
 
-    .compra {
+    .compraGibson {
         flex-direction: column;
         padding: 0px;
         margin: 20px;
@@ -849,7 +823,7 @@ input {
         align-items: center;
     }
 
-    .compra p {
+    .compraGibson p {
         text-align: center;
     }
 
@@ -858,9 +832,17 @@ input {
         margin: 0 auto;
     }
 
-    .compra img {
+    .compraGibson img {
         display: block;
         margin: 0 auto;
+    }
+
+    .signature-gibson-img {
+        flex-direction: column;
+    }
+
+    .signature-gibson-img img {
+        width: 100%;
     }
 
     /* ------------------ page login -----------------*/
@@ -912,16 +894,6 @@ input {
     .ofertas-titulo img {
         height: 30px;
         padding: 0px 10px;
-    }
-
-    /* --------- page signatureGibson main -----------*/
-
-    .signature-gibson-img {
-        flex-direction: column;
-    }
-
-    .signature-gibson-img img {
-        width: 100%;
     }
 
     /* -------------- page catGuitarras -------------*/
