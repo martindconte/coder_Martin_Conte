@@ -479,28 +479,27 @@ input {
     display: flex;
 }
 
-.aside-compras {
+.asideCompras {
     margin: 15px;
     display: flex;
     flex-direction: column;
     width: 20vw;
     min-width: 200px;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 
-.aside-compras h2 {
-    font-family: 'Pathway Gothic One', sans-serif;
+.asideCompras h2 {
     font-size: 30px;
     font-weight: bolder;
 }
 
-.aside-compras-check {
+.asideCompras__check {
     margin-bottom: 10px
 }
 
-.aside-compras-check p {
+.asideCompras__check p {
     display: flex;
     justify-content: space-between;
-    font-family: 'Pathway Gothic One', sans-serif;
     font-size: 20px;
     font-weight: 400;
     padding: 8px 15px;
@@ -508,19 +507,15 @@ input {
     border: 1px solid black;
 }
 
-.aside-compras-marcas p,
-.aside-compras-forma p,
-.aside-compras-cuerda-titulo {
-    font-family: 'Pathway Gothic One', sans-serif;
+/* .aside-compras-cuerda-titulo {
     font-size: 30px;
     font-weight: bold;
     margin: 10px 0px;
-}
+} */
 
-.aside-compras h3,
-.aside-compras h4,
+.asideCompras h3,
+.asideCompras h4,
 .aside-compras-cuerda-descrip {
-    font-family: 'Pathway Gothic One', sans-serif;
     font-size: 20px;
     font-weight: 400;
     margin: 10px 0px;
@@ -773,18 +768,18 @@ input {
         flex-direction: row-reverse;
     }
 
-    .aside-filtro:hover+.aside-compras {
+    .aside-filtro:hover+.asideCompras {
         background-color: #f1f1f1;
         display: block;
         transition: .5s;
     }
 
-    .aside-compras:hover {
+    .asideCompras:hover {
         display: block;
         background-color: #f1f1f1;
     }
 
-    .aside-compras {
+    .asideCompras {
         position: absolute;
         margin-top: 40px;
         padding: 10px;
@@ -898,7 +893,7 @@ input {
 
     /* -------------- page catGuitarras -------------*/
 
-    .aside-compras {
+    .asideCompras {
         margin-top: 60px;
     }
 }
