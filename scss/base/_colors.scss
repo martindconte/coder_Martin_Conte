@@ -1,0 +1,40 @@
+
+/* ---------------------- COLORES ------------------------ */
+
+/* ----------------- COLORES BOOTSTRAP -------------------- */
+
+:root {
+    --bs-navbar-brand-hover-color: #b9b9b9;
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #FFFFFF
+}
+
+/* ---------------------- COLORES ------------------------ */
+
+$color-primary: #FFFFFF;
+$color-secundary: #000000;
+$color-transparente: transparent;
+
+/* ------------------------ BOTON ------------------------ */
+
+$bg-boton: #262218;
+$bg-botonHover: #262218;
+$bg-botonCompra: #08002c;
+$bg-botonCompraHover: #0e0088;
+
+/* ------------------ BACKGROUND COLOR ------------------- */
+
+$bg-header: radial-gradient(circle, rgba(150, 30, 30, 1) 0%, rgba(0, 0, 0, 1) 75%);
+$bg-pageLogin: #e2e2e2;
+
+/* ---------------------- BOX SHAWOD --------------------- */
+
+$log-box-shaow: -3px 9px 20px 2px #00000080;
+$log-box-shaowFocus: -3px 9px 20px 2px rgba(202, 0, 0, 0.502);
+
+/* ------------------- MAPS DE COLORES ------------------- */
+
+$paleta: (
+    "primary": black,
+    "secundary": white,
+);
