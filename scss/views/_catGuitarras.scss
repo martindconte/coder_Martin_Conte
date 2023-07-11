@@ -1,0 +1,96 @@
+/* ----------------- PAGE CATGUITARRAS ------------------- */
+/* ----------------------- Aside ------------------------- */
+
+.main-page-guitarras {
+    display: flex;
+}
+
+.asideCompras {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    min-width: 200px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    h2 {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    &__check {
+        margin-bottom: 10px;
+        p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 8px 15px;
+            margin: 10px 0px;
+            border: 1px solid black;
+        }
+    }
+    h3, h4, &__cantCuerdas {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 10px 0px;
+    }
+}
+
+/* ------------------ page CotGuitarras ------------------- */
+/* ---------------------- tarjetas ------------------------ */
+
+.productoVentas  {
+    display: flex;
+    flex-direction: column;
+    &__ordenar {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        label {
+            font-family: 'Pathway Gothic One', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0px;
+            margin-right: 5px;
+        }
+    }
+    select {
+        font-family: 'Pathway Gothic One', sans-serif;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__tarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        div {
+            width: 20vw;
+            min-width: 200px;
+            margin: 20px;
+        }
+        img {
+            width: 90%;
+            min-width: 200px
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.aside-filtro {
+    display: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+    margin-right: 5px;
+    i {
+        font-size: 10px;
+        margin-left: 5px;
+        padding: 3px;
+        border: 1px solid black;
+    }
+}

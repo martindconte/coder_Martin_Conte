@@ -1,0 +1,14 @@
+*** SASS ***
+
+1. Inicializar NPM
+
+    a. npm init --> Generará un archivo package.json
+
+2. Instalar sass
+
+    b. npm install -g sass
+
+3. Comando para compilar
+
+    c. sass --watch scss/main.scss css/style.css
+ 

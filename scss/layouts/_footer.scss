@@ -1,0 +1,80 @@
+// --------------------- footer  --------------------
+/* --------------------- footer  -------------------- */
+
+.footer {
+    background-image: url('../multimedia/img/main-footer-background2.jpg');
+    background-size: 100% 100%;
+    background-position: top center;
+    padding: 50px;
+    color: white;
+    h4 {
+        a {
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: 25px;
+            font-weight: 800;
+            color: white;
+            padding-right: 10px;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            a {
+                list-style: none;
+                font-family: 'Saira Condensed', sans-serif;
+                font-size: 20px;
+                font-weight: normal;
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    font-weight: 800;
+                    color: #FFFFFF;
+                    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;                
+                }
+            }
+        }
+    }
+    i {
+        font-size: 30px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+        grid-template-areas:
+            "electronica instrumentos teclados info"
+            "electronica instrumentos redes contacto";
+    }
+    &__electronica {
+        grid-area: electronica;
+    }
+    &__instrumentos {
+        grid-area: instrumentos;
+    }
+    &__teclados {
+        grid-area: teclados;
+    }
+    
+    &__info {
+        grid-area: info;
+    }
+    
+    &__contacto {
+        grid-area: contacto;
+    }
+    
+    &__redes {
+        grid-area: redes;
+        img {
+            width: 35px;
+            margin: 5px;
+        }
+        ul {
+            li {
+                display: inline;
+            }
+        }
+    }
+}
