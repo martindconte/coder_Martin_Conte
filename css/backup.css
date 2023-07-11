@@ -527,7 +527,7 @@ input {
 /* ---------------- page CompraGuitarras ------------------*/
 /* ----------------------- Aside --------------------------*/
 
-.main-page-guitarras {
+/* .main-page-guitarras {
     display: flex;
 }
 
@@ -565,12 +565,12 @@ input {
     font-size: 20px;
     font-weight: 400;
     margin: 10px 0px;
-}
+} */
 
 /* ---------------- page CompraGuitarras ------------------*/
 /* ---------------------- tarjetas ------------------------*/
 
-.productoVenta {
+/* .productoVenta {
     display: flex;
     flex-direction: column;
 }
@@ -629,11 +629,11 @@ input {
 
 .productoVentas__tarjeta p {
     font-size: 18px;
-}
+} */
 
 /* ----------------------- page login -----------------------*/
 
-.login {
+/* .login {
     background-image: url(../multimedia/img/login-background-.png);
     background-color: #e2e2e2;
     background-size: contain;
@@ -733,7 +733,7 @@ input {
 
 .login__sesion-registrarse {
     display: none;
-}
+} */
 
 
 /* ----------------------- media query ----------------------*/

@@ -1,3 +1,4 @@
+/* ------------------------ BASE ------------------------- */
 /* ----------------- Iniciacion  -----------------*/
 * {
   padding: 0px;
@@ -16,7 +17,8 @@ a {
   text-decoration: none;
 }
 
-/* --------------------- footer  -------------------- */
+/* ----------------------- LAYOUT ------------------------ */
+/* ----------------------- FOOTER ------------------------ */
 .footer {
   background-image: url("../multimedia/img/main-footer-background2.jpg");
   background-size: 100% 100%;
@@ -86,6 +88,10 @@ a {
   display: inline;
 }
 
+/* ------------------------ VIEWS ------------------------ */
+/* ----------------------- INDEX ------------------------- */
+/* ------------------------ main ------------------------- */
+/* header realizado con Boostrap */
 .slideOfertas {
   background-image: url("../multimedia/img/section-slide-background-img1.jpg");
   background-size: cover;
@@ -317,6 +323,95 @@ a {
   border: 1px solid black;
 }
 
+/* -------------------- PAGE LOGUEO ---------------------- */
+.login {
+  background-image: url(../multimedia/img/login-background-.png);
+  background-color: #e2e2e2;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.login input {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+  background: transparent;
+  box-shadow: -3px 9px 20px 2px rgba(0, 0, 0, 0.5019607843);
+  transition: 0.3s ease;
+}
+.login input:focus {
+  outline: none;
+  box-shadow: -3px 9px 20px 2px rgba(202, 0, 0, 0.502);
+}
+.login input[type=submit] {
+  border: none;
+  background-color: rgb(54, 54, 54);
+  color: white;
+  padding: 5px;
+  margin: 10px 0px;
+  border-radius: 0.5rem;
+}
+.login label {
+  font-size: 20px;
+  padding: 5px 0px;
+}
+.login__sesion {
+  display: flex;
+  flex-direction: column;
+  padding-right: 40px;
+  width: 30%;
+  border-right: 2px solid black;
+}
+.login__sesion p {
+  text-align: right;
+  font-weight: 800;
+  padding: 10px 0px;
+  margin: 0px;
+}
+.login__sesion form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+.login__sesion-registrarse {
+  display: none;
+}
+.login__usuario {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  width: 30%;
+}
+.login__usuario p {
+  text-align: left;
+  font-weight: 800;
+  padding: 10px 0px;
+  margin: 0px;
+}
+.login__usuario form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+.login__usuario__check {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.login__usuario__check input[type=checkbox] {
+  margin: 0px;
+}
+
+/* --------------- PAGE SIGNATURE GIBSON ----------------- */
 .signature-gibson {
   display: flex;
   background-color: black;
@@ -407,6 +502,192 @@ a {
   margin-bottom: 0px;
 }
 
+/* ---------------------- MEDIA QUERY -----------------------*/
+@media screen and (max-width: 992px) {
+  /* -------------------- header -------------------*/
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: space-between;
+  }
+  .header > .navbar-toggler {
+    margin-right: 20px;
+  }
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-nav {
+    font-size: 16px;
+  }
+  /* -------------------- footer -------------------*/
+  .footer {
+    padding: 20px;
+  }
+  .footer__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-template-areas: "electronica instrumentos teclados" "info        contacto     redes";
+  }
+  /* -- --------------- page login -----------------*/
+  .login__sesion, .login__usuario {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* ------------------ index main -----------------*/
+  .boton {
+    padding: 10px 50px;
+    border-radius: 1rem;
+  }
+  .slideOfertas__img img {
+    margin: 10px;
+  }
+  .oportunidades a {
+    margin: 20px;
+  }
+  /* -------------------- footer -------------------*/
+  .footer h4 a {
+    font-size: 20px;
+    padding: 0%;
+  }
+  .footer ul li a {
+    font-size: 16px;
+  }
+  /* ------------- poge siantureGibson -------------*/
+  .compraGibson__compra {
+    display: none;
+  }
+  /* -------------- page catGuitarras -------------*/
+  .aside-filtro {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    margin: 10px;
+  }
+  .aside-filtro:hover + .asideCompras {
+    background-color: #f1f1f1;
+    display: block;
+    transition: 0.5s;
+  }
+  .main-page-guitarras {
+    flex-direction: row-reverse;
+  }
+  .asideCompras {
+    position: absolute;
+    margin-top: 40px;
+    padding: 10px;
+    display: none;
+    transition: 0.5s;
+  }
+  .asideCompras:hover {
+    display: block;
+    background-color: #f1f1f1;
+  }
+}
+@media screen and (max-width: 576px) {
+  /* ------------------ index main -----------------*/
+  .slide-brand img {
+    width: 35vw;
+    height: 200px;
+    padding: 0px 5px;
+  }
+  /* -------------------- footer -------------------*/
+  .footer__grid {
+    gap: 20px;
+    grid-template-areas: "electronica instrumentos teclados" "electronica redes        redes" "info        contacto     contacto";
+  }
+  /* --------- page signatureGibson main -----------*/
+  .compraGibson {
+    flex-direction: column;
+    padding: 0px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .compraGibson p {
+    text-align: center;
+  }
+  .compraGibson img {
+    display: block;
+    margin: 0 auto;
+  }
+  .boton {
+    display: block;
+    margin: 0 auto;
+  }
+  .signature-gibson-img {
+    flex-direction: column;
+  }
+  .signature-gibson-img img {
+    width: 100%;
+  }
+  /* ------------------ page login -----------------*/
+  .login {
+    justify-content: flex-start;
+  }
+  .login__sesion {
+    width: 100%;
+    border: none;
+    padding: 0px;
+    margin: 0px 40px 20px 20px;
+  }
+  .login__sesion p {
+    text-align: left;
+  }
+  .login__sesion-registrarse {
+    display: block;
+    text-align: center;
+  }
+  .login__usuario {
+    width: 100%;
+    margin: 50px 40px 20px 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  /* -------------------- header -------------------*/
+  .navbar-brand {
+    font-size: 20px;
+  }
+  /* -- --------------- index main -----------------*/
+  .ofertas-titulo {
+    margin-bottom: 10px;
+  }
+  .ofertas-titulo h2 {
+    font-size: 20px;
+  }
+  .ofertas-titulo img {
+    height: 30px;
+    padding: 0px 10px;
+  }
+  /* -------------- page catGuitarras -------------*/
+  .asideCompras {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* -------------------- header -------------------*/
+  /* --------- page signatureGibson main -----------*/
+  .signature-gibson {
+    font-size: 20px;
+  }
+  .signature-gibson-img img {
+    width: 100%;
+  }
+  /* -------------------- footer -------------------*/
+  .footer {
+    padding: 10px;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "electronica instrumentos" "teclados info" "contacto contacto" "redes redes";
+  }
+  .footer i {
+    font-size: 16px;
+  }
+}
+/* ---------------------- UTILITIES ---------------------- */
+/* ----------------------- VENDORS ----------------------- */
+/* ---------------------- BOOTSTRAP ---------------------- */
+/* --------------------- HEADER NAV ---------------------- */
 .bg-body-tertiary {
   background: radial-gradient(circle, rgb(150, 30, 30) 0%, rgb(0, 0, 0) 75%);
 }

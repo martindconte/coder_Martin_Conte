@@ -1,0 +1,273 @@
+/* ---------------------- MEDIA QUERY -----------------------*/
+
+@media screen and (max-width: 992px) {
+
+    /* -------------------- header -------------------*/
+
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: space-between;
+    }
+
+    .header>.navbar-toggler {
+        margin-right: 20px;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+    }
+
+    .navbar-nav {
+        font-size: 16px;
+    }
+
+    /* -------------------- footer -------------------*/
+
+    .footer {
+        padding: 20px;
+
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            grid-template-areas:
+                "electronica instrumentos teclados"
+                "info        contacto     redes";
+        }
+    }
+
+    /* -- --------------- page login -----------------*/
+
+    .login {
+
+        &__sesion,
+        &__usuario {
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* ------------------ index main -----------------*/
+
+    .boton {
+        padding: 10px 50px;
+        border-radius: 1rem;
+    }
+
+    .slideOfertas {
+        &__img {
+            img {
+                margin: 10px;
+            }
+        }
+    }
+
+    .oportunidades {
+        a {
+            margin: 20px;
+        }
+    }
+
+
+    /* -------------------- footer -------------------*/
+
+    .footer {
+        h4 {
+            a {
+                font-size: 20px;
+                padding: 0%;
+            }
+        }
+    }
+
+    .footer {
+        ul {
+            li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    /* ------------- poge siantureGibson -------------*/
+
+    .compraGibson {
+        &__compra {
+            display: none;
+        }
+    }
+
+    /* -------------- page catGuitarras -------------*/
+
+    .aside-filtro {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        margin: 10px;
+
+        &:hover+.asideCompras {
+            background-color: #f1f1f1;
+            display: block;
+            transition: .5s;
+        }
+    }
+
+    .main-page-guitarras {
+        flex-direction: row-reverse;
+    }
+
+    .asideCompras {
+        position: absolute;
+        margin-top: 40px;
+        padding: 10px;
+        display: none;
+        transition: .5s;
+
+        &:hover {
+            display: block;
+            background-color: #f1f1f1;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* ------------------ index main -----------------*/
+
+    .slide-brand img {
+        width: 35vw;
+        height: 200px;
+        padding: 0px 5px;
+    }
+
+    /* -------------------- footer -------------------*/
+
+    .footer {
+        &__grid {
+            gap: 20px;
+            grid-template-areas:
+                "electronica instrumentos teclados"
+                "electronica redes        redes"
+                "info        contacto     contacto";
+        }
+    }
+
+    /* --------- page signatureGibson main -----------*/
+
+    .compraGibson {
+        flex-direction: column;
+        padding: 0px;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        p {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }   
+    }
+
+
+    .boton {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .signature-gibson-img {
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+    }
+
+    /* ------------------ page login -----------------*/
+
+    .login {
+        justify-content: flex-start;
+        &__sesion {
+            width: 100%;
+            border: none;
+            padding: 0px;
+            margin: 0px 40px 20px 20px;
+            p {
+                text-align: left;
+            }
+            &-registrarse {
+                display: block;
+                text-align: center;
+            }
+        }
+        &__usuario {
+            width: 100%;
+            margin: 50px 40px 20px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    /* -------------------- header -------------------*/
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    /* -- --------------- index main -----------------*/
+
+    .ofertas-titulo {
+        margin-bottom: 10px;
+        h2 {
+            font-size: 20px;
+        }
+        img {
+            height: 30px;
+            padding: 0px 10px;
+        }
+    }
+
+    /* -------------- page catGuitarras -------------*/
+
+    .asideCompras {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    /* -------------------- header -------------------*/
+
+    // .header {
+    //     padding: 5px;
+    // }
+
+    /* --------- page signatureGibson main -----------*/
+
+    .signature-gibson {
+        font-size: 20px;
+    }
+
+    .signature-gibson-img img {
+        width: 100%;
+    }
+
+    /* -------------------- footer -------------------*/
+
+    .footer {
+        padding: 10px;
+        &__grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "electronica instrumentos"
+                "teclados info"
+                "contacto contacto"
+                "redes redes";
+        }
+        i {
+            font-size: 16px;
+        }
+    }
+}

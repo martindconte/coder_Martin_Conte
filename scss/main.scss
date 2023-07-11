@@ -1,24 +1,25 @@
-// BASE
+/* ------------------------ BASE ------------------------- */
 
 @import "base/normalize";
 @import "base/fonts";
 
-// LAYOUT
+/* ----------------------- LAYOUT ------------------------ */
 
 @import "layouts/header";
 @import "layouts/footer";
 
-// VIEWS
+/* ------------------------ VIEWS ------------------------ */
 
 @import "views/index";
 @import "views/catGuitarras";
 @import "views/logueo";
 @import "views/signatureGibson.scss";
+@import "views/mediaQuery";
 
-// UTILITIES  
+/* ---------------------- UTILITIES ---------------------- */
 
 @import "utilities/variables";
 
-// VENDORS 
+/* ----------------------- VENDORS ----------------------- */ 
 
 @import "vendors/bootstrap";
