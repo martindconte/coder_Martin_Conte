@@ -1,40 +1,21 @@
-
 /* ----------------------- FONTS ------------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700;800&family=Pathway+Gothic+One&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Saira+Extra+Condensed:wght@200;300;400;500;700;800&display=swap');
 
 @import '../utilities/variables';
-@import './colors';
 
-// @each $font, $font-name in $font-family {
-//     $font-key: $font;
-//     $font-value: $family-name;
+@each $font, $name in $font-family {
+    $font-key: $font;
+    $font-value: $name;
 
-//     @each $size-name, $px, $fw in $font-size {
-//         $size-key: $name;
-//         $px-key: $px;
-//         $weight-key: $fw;
-//     }
+    @each $size-name, $size-value in $font-sizes {
+        $size: map-get($size-value, size);
+        $weight: map-get($size-value, weight);
 
-//     @each $color in $paleta {
-//         $color-key: nth($paleta, 2)
-//     }
-
-// }
-
-  
- 
-  
-// @each $family-key, $family-value in $font-family {
-//     $size-key: $family-key;
-//     $weight-key: $family-key;
-  
-//     $size: map-get(map-get($font-sizes, $size-key), "size");
-//     $weight: map-get(map-get($font-sizes, $weight-key), "weight");
-  
-//     .#{$family-key} {
-//       font-size: $size;
-//       font-weight: $weight;
-//       font-family: $family-value;
-//     }
-//   }
+        .#{$font-key}-#{$size-name} {
+            font-family: $font-value;
+            font-size: $size;
+            font-weight: $weight;
+        }
+    }
+}

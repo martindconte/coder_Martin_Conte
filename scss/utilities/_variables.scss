@@ -2,19 +2,16 @@
 /* ---------------------- VARIABLES ---------------------- */
 
 $font-sizes: (
-  "xs": (size: 16px, weight: 400),
-  "s": (size: 18px, weight: 400),
-  "m": (size: 20px, weight: 400),
-  "l": (size: 25px, weight: 600),
-  "xl": (size: 30px, weight: 800),
-  "xxl": (size: 35px, weight: 800)
+  xs: (size: 16px, weight: 400),
+  s: (size: 18px, weight: 400),
+  m: (size: 20px, weight: 400),
+  l: (size: 25px, weight: 600),
+  xl: (size: 30px, weight: 800),
 );
 
 $font-family: (
-  "font-primary": 'Saira Condensed',
-  "font-secondary": 'Roboto',
-  "font-tertiary": 'Rajdhani',
-  "font-fourth": 'Pathway Gothic One',
+  font-primary: 'Saira Condensed',
+  font-secondary: 'Roboto',
+  font-tertiary: 'Rajdhani',
+  font-fourth: 'Pathway Gothic One',
 );
-
-

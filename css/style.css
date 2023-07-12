@@ -32,19 +32,128 @@ a {
 /* ------------------ BACKGROUND COLOR ------------------- */
 /* ---------------------- BOX SHAWOD --------------------- */
 /* ------------------- MAPS DE COLORES ------------------- */
-/* ----------------------- FONTS ------------------------- */ /* ---------------------- VARIABLES ---------------------- */ /* ---------------------- COLORES ------------------------ */
-/* ----------------- COLORES BOOTSTRAP -------------------- */
-:root {
-  --bs-navbar-brand-hover-color: #b9b9b9;
-  --bs-btn-color: #ffffff;
-  --bs-btn-border-color: #FFFFFF ;
+/* ----------------------- FONTS ------------------------- */
+/* ---------------------- VARIABLES ---------------------- */
+.font-primary-xs {
+  font-family: "Saira Condensed";
+  font-size: 16px;
+  font-weight: 400;
 }
 
-/* ---------------------- COLORES ------------------------ */
-/* ------------------------ BOTON ------------------------ */
-/* ------------------ BACKGROUND COLOR ------------------- */
-/* ---------------------- BOX SHAWOD --------------------- */
-/* ------------------- MAPS DE COLORES ------------------- */
+.font-primary-s {
+  font-family: "Saira Condensed";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-primary-m {
+  font-family: "Saira Condensed";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-primary-l {
+  font-family: "Saira Condensed";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.font-primary-xl {
+  font-family: "Saira Condensed";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.font-secondary-xs {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.font-secondary-s {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-secondary-m {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-secondary-l {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.font-secondary-xl {
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.font-tertiary-xs {
+  font-family: "Rajdhani";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.font-tertiary-s {
+  font-family: "Rajdhani";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-tertiary-m {
+  font-family: "Rajdhani";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-tertiary-l {
+  font-family: "Rajdhani";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.font-tertiary-xl {
+  font-family: "Rajdhani";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.font-fourth-xs {
+  font-family: "Pathway Gothic One";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.font-fourth-s {
+  font-family: "Pathway Gothic One";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-fourth-m {
+  font-family: "Pathway Gothic One";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-fourth-l {
+  font-family: "Pathway Gothic One";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.font-fourth-xl {
+  font-family: "Pathway Gothic One";
+  font-size: 30px;
+  font-weight: 800;
+}
+
 /* ----------------------- LAYOUT ------------------------ */
 /* ----------------------- FOOTER ------------------------ */
 .footer {
