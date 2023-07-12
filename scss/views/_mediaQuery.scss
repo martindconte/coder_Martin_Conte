@@ -136,10 +136,25 @@
 
     /* ------------------ index main -----------------*/
 
+    .slideOfertas {
+        padding: 20px 10px;
+    }
+
     .slide-brand img {
         width: 35vw;
         height: 200px;
         padding: 0px 5px;
+    }
+
+    .ofertas-titulo {
+        margin-bottom: 10px;
+        h2 {
+            font-size: 40px;
+        }
+        img {
+            height: 30px;
+            padding: 0px 10px;
+        }
     }
 
     /* -------------------- footer -------------------*/
@@ -221,7 +236,7 @@
     .ofertas-titulo {
         margin-bottom: 10px;
         h2 {
-            font-size: 20px;
+            font-size: 30px;
         }
         img {
             height: 30px;
@@ -238,20 +253,15 @@
 
 @media screen and (max-width: 320px) {
 
-    /* -------------------- header -------------------*/
-
-    // .header {
-    //     padding: 5px;
-    // }
-
     /* --------- page signatureGibson main -----------*/
 
     .signature-gibson {
         font-size: 20px;
-    }
-
-    .signature-gibson-img img {
-        width: 100%;
+        &-img {
+            img {
+                width: 100%;
+            }
+        }
     }
 
     /* -------------------- footer -------------------*/

@@ -9,6 +9,21 @@
 @import "layouts/header";
 @import "layouts/footer";
 
+
+/* ---------------------- UTILITIES ---------------------- */
+
+@import "utilities/variables";
+
+/* --------------------- COMPONENTS ---------------------- */
+
+@import "components/button";
+@import "components/tipografia";
+
+
+/* ----------------------- VENDORS ----------------------- */ 
+
+@import "vendors/bootstrap";
+
 /* ------------------------ VIEWS ------------------------ */
 
 @import "views/index";
@@ -16,11 +31,3 @@
 @import "views/logueo";
 @import "views/signatureGibson.scss";
 @import "views/mediaQuery";
-
-/* ---------------------- UTILITIES ---------------------- */
-
-@import "utilities/variables";
-
-/* ----------------------- VENDORS ----------------------- */ 
-
-@import "vendors/bootstrap";

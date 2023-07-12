@@ -1,0 +1,54 @@
+/* --------------------- TIPOGRAFIAS --------------------- */
+
+@import '../utilities/variables';
+
+@each $font, $name in $font-family {
+    $font-key: $font;
+    $font-value: $name;
+
+    @each $size-name, $size-value in $font-sizes {
+        $size: map-get($size-value, size);
+        $weight: map-get($size-value, weight);
+
+        .#{$font-key}-#{$size-name} {
+            font-family: $font-value;
+            font-size: $size;
+            font-weight: $weight;
+        }
+    }
+}
+
+
+.precio {
+    @extend .font-primary-xl;
+    font-size: 35px;
+    text-align: center;
+    color: $primary-color;
+}
+
+.descripcion {
+    @extend .font-primary-m;
+    text-align: center;
+    color: $primary-color;
+}
+
+.titulo-producto {
+    @extend .font-primary-xl;
+}
+
+.subtitulo-producto {
+    @extend .font-primary-l;
+    margin-top: 20px;
+}
+
+.ofertas-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        @extend .font-secondary-xl;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: $color-primary;
+    }
+}

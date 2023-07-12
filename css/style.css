@@ -2,12 +2,20 @@
 /* --------------------- NORMALIZE ----------------------- */
 /* -------------------- INICIACION ----------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700;800&family=Pathway+Gothic+One&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Saira+Extra+Condensed:wght@200;300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700;800&family=Pathway+Gothic+One&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;900&family=Saira+Condensed:wght@300;400;500;600;700&family=Saira+Extra+Condensed:wght@200;300;400;500;700;800&display=swap");
 * {
   padding: 0px;
   margin: 0px;
-  text-decoration: none;
   /* Sacar el subrayado del link */
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 button {
@@ -17,6 +25,15 @@ button {
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 16px; /* QUITAR CLASE DE BOOTSTRAP */
 }
 
 /* ---------------------- COLORES ------------------------ */
@@ -33,127 +50,6 @@ a {
 /* ---------------------- BOX SHAWOD --------------------- */
 /* ------------------- MAPS DE COLORES ------------------- */
 /* ----------------------- FONTS ------------------------- */
-/* ---------------------- VARIABLES ---------------------- */
-.font-primary-xs {
-  font-family: "Saira Condensed";
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.font-primary-s {
-  font-family: "Saira Condensed";
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.font-primary-m {
-  font-family: "Saira Condensed";
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.font-primary-l {
-  font-family: "Saira Condensed";
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.font-primary-xl {
-  font-family: "Saira Condensed";
-  font-size: 30px;
-  font-weight: 800;
-}
-
-.font-secondary-xs {
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.font-secondary-s {
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.font-secondary-m {
-  font-family: "Roboto";
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.font-secondary-l {
-  font-family: "Roboto";
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.font-secondary-xl {
-  font-family: "Roboto";
-  font-size: 30px;
-  font-weight: 800;
-}
-
-.font-tertiary-xs {
-  font-family: "Rajdhani";
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.font-tertiary-s {
-  font-family: "Rajdhani";
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.font-tertiary-m {
-  font-family: "Rajdhani";
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.font-tertiary-l {
-  font-family: "Rajdhani";
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.font-tertiary-xl {
-  font-family: "Rajdhani";
-  font-size: 30px;
-  font-weight: 800;
-}
-
-.font-fourth-xs {
-  font-family: "Pathway Gothic One";
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.font-fourth-s {
-  font-family: "Pathway Gothic One";
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.font-fourth-m {
-  font-family: "Pathway Gothic One";
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.font-fourth-l {
-  font-family: "Pathway Gothic One";
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.font-fourth-xl {
-  font-family: "Pathway Gothic One";
-  font-size: 30px;
-  font-weight: 800;
-}
-
 /* ----------------------- LAYOUT ------------------------ */
 /* ----------------------- FOOTER ------------------------ */
 .footer {
@@ -223,6 +119,240 @@ a {
 }
 .footer__redes ul li {
   display: inline;
+}
+
+/* ---------------------- UTILITIES ---------------------- */
+/* ---------------------- VARIABLES ---------------------- */
+/* --------------------- COMPONENTS ---------------------- */
+/* ----------------------- BOTONES ----------------------- */
+/* ---------------------- COLORES ------------------------ */
+/* ----------------- COLORES BOOTSTRAP -------------------- */
+:root {
+  --bs-navbar-brand-hover-color: #b9b9b9;
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #FFFFFF ;
+}
+
+/* ---------------------- COLORES ------------------------ */
+/* ------------------------ BOTON ------------------------ */
+/* ------------------ BACKGROUND COLOR ------------------- */
+/* ---------------------- BOX SHAWOD --------------------- */
+/* ------------------- MAPS DE COLORES ------------------- */
+/* ----------------------- FONTS ------------------------- */
+.boton-compra, .boton {
+  display: block;
+  color: #FFFFFF;
+  transition: 0.3s ease;
+  border-radius: 1.5rem;
+  padding: 10px 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 200px;
+}
+.boton-compra:hover, .boton:hover {
+  border-radius: 1rem;
+}
+
+.boton {
+  background-color: #262218;
+}
+.boton:hover {
+  background-color: #0e0088;
+}
+.boton-compra {
+  background-color: #08002c;
+}
+.boton-compra:hover {
+  background-color: #6e0700;
+}
+
+/* --------------------- TIPOGRAFIAS --------------------- */
+/* ---------------------- VARIABLES ---------------------- */
+.font-primary-xs {
+  font-family: "Saira Condensed";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.font-primary-s {
+  font-family: "Saira Condensed";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-primary-m, .descripcion, .boton, .boton-compra {
+  font-family: "Saira Condensed";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-primary-l, .subtitulo-producto {
+  font-family: "Saira Condensed";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.font-primary-xl, .titulo-producto, .precio {
+  font-family: "Saira Condensed";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.font-secondary-xs {
+  font-family: "Rajdhani";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.font-secondary-s {
+  font-family: "Rajdhani";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-secondary-m {
+  font-family: "Rajdhani";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-secondary-l {
+  font-family: "Rajdhani";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.font-secondary-xl, .ofertas-titulo h2 {
+  font-family: "Rajdhani";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.font-tertiary-xs {
+  font-family: "Pathway Gothic One";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.font-tertiary-s {
+  font-family: "Pathway Gothic One";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.font-tertiary-m {
+  font-family: "Pathway Gothic One";
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.font-tertiary-l {
+  font-family: "Pathway Gothic One";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.font-tertiary-xl {
+  font-family: "Pathway Gothic One";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.precio {
+  font-size: 35px;
+  text-align: center;
+  color: black;
+}
+
+.descripcion {
+  text-align: center;
+  color: black;
+}
+
+.subtitulo-producto {
+  margin-top: 20px;
+}
+
+.ofertas-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ofertas-titulo h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* ----------------------- VENDORS ----------------------- */
+/* ---------------------- BOOTSTRAP ---------------------- */
+/* --------------------- HEADER NAV ---------------------- */
+.bg-body-tertiary {
+  background: radial-gradient(circle, rgb(150, 30, 30) 0%, rgb(0, 0, 0) 75%);
+}
+
+.navbar {
+  --bs-navbar-brand-hover-color: #b9b9b9;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.navbar-brand {
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px 5px 0px 3px;
+}
+
+.navbar-nav {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #961e1e;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  font-weight: 800;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  font-weight: 800;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  background-color: transparent;
+}
+
+.btn-outline-success {
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #FFFFFF;
+}
+
+.btn:hover {
+  color: #000;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+input {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.carousel {
+  background-color: black;
 }
 
 /* ------------------------ VIEWS ------------------------ */
@@ -722,10 +852,23 @@ a {
 }
 @media screen and (max-width: 576px) {
   /* ------------------ index main -----------------*/
+  .slideOfertas {
+    padding: 20px 10px;
+  }
   .slide-brand img {
     width: 35vw;
     height: 200px;
     padding: 0px 5px;
+  }
+  .ofertas-titulo {
+    margin-bottom: 10px;
+  }
+  .ofertas-titulo h2 {
+    font-size: 40px;
+  }
+  .ofertas-titulo img {
+    height: 30px;
+    padding: 0px 10px;
   }
   /* -------------------- footer -------------------*/
   .footer__grid {
@@ -789,7 +932,7 @@ a {
     margin-bottom: 10px;
   }
   .ofertas-titulo h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .ofertas-titulo img {
     height: 30px;
@@ -801,7 +944,6 @@ a {
   }
 }
 @media screen and (max-width: 320px) {
-  /* -------------------- header -------------------*/
   /* --------- page signatureGibson main -----------*/
   .signature-gibson {
     font-size: 20px;
@@ -820,78 +962,6 @@ a {
   .footer i {
     font-size: 16px;
   }
-}
-/* ---------------------- UTILITIES ---------------------- */
-/* ---------------------- VARIABLES ---------------------- */
-/* ----------------------- VENDORS ----------------------- */
-/* ---------------------- BOOTSTRAP ---------------------- */
-/* --------------------- HEADER NAV ---------------------- */
-.bg-body-tertiary {
-  background: radial-gradient(circle, rgb(150, 30, 30) 0%, rgb(0, 0, 0) 75%);
-}
-
-.navbar {
-  --bs-navbar-brand-hover-color: #b9b9b9;
-}
-
-.navbar-toggler {
-  background-color: white;
-}
-
-.navbar-brand {
-  color: white;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 0px 5px 0px 3px;
-}
-
-.navbar-nav {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
-}
-
-.navbar-nav .dropdown-menu {
-  background-color: #961e1e;
-  color: white;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
-}
-
-.nav-link:hover {
-  font-weight: 800;
-  color: #FFFFFF;
-  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
-}
-
-.dropdown-item {
-  color: white;
-}
-
-.dropdown-item:hover {
-  font-weight: 800;
-  color: #FFFFFF;
-  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
-  background-color: transparent;
-}
-
-.btn-outline-success {
-  --bs-btn-color: #ffffff;
-  --bs-btn-border-color: #FFFFFF;
-}
-
-.btn:hover {
-  color: #000;
-  background-color: #ffffff;
-  border-color: #ffffff;
-}
-
-input {
-  font-family: "Rajdhani", sans-serif;
-}
-
-.carousel {
-  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

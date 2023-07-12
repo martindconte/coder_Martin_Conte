@@ -1,0 +1,36 @@
+
+
+/* ----------------------- BOTONES ----------------------- */
+
+@import "../base/colors";
+@import "../base/fonts";
+
+%boton {
+    display: block;
+    @extend .font-primary-m;
+    color: $color-primary;
+    transition: 0.3s ease;
+    border-radius: 1.5rem;
+    padding: 10px 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 200px;
+    &:hover {
+        border-radius: 1rem
+    }
+}
+
+.boton {
+    @extend %boton;
+    background-color: $bg-boton;
+    &:hover {
+        background-color: $bg-botonHover;
+    }
+    &-compra {  
+        @extend %boton;
+        background-color: $bg-botonCompra;
+        &:hover {
+            background-color: $bg-botonCompraHover;
+        }
+    }
+}
