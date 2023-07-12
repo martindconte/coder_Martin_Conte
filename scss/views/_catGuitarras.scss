@@ -6,16 +6,16 @@
 }
 
 .asideCompras {
+    @include column;    
     margin: 15px;
-    display: flex;
-    flex-direction: column;
     width: 20vw;
     min-width: 200px;
-    font-family: 'Pathway Gothic One', sans-serif;
     h2 {
-        font-size: 30px;
-        font-weight: bolder;
+        @extend .font-tertiary-xl;
+        font-size: 40px;
     }
+
+
     &__check {
         margin-bottom: 10px;
         p {
@@ -25,12 +25,11 @@
             font-weight: 400;
             padding: 8px 15px;
             margin: 10px 0px;
-            border: 1px solid black;
+            border: 1px solid black;    
         }
     }
     h3, h4, &__cantCuerdas {
-        font-size: 20px;
-        font-weight: 400;
+        @extend .font-tertiary-m;
         margin: 10px 0px;
     }
 }
@@ -38,32 +37,37 @@
 /* ------------------ page CotGuitarras ------------------- */
 /* ---------------------- tarjetas ------------------------ */
 
+.aside-filtro {
+    display: none;
+    @extend .font-tertiary-m;
+    margin: 0px;
+    margin-right: 5px;
+    i {
+        font-size: 10px;
+        margin-left: 5px;
+        padding: 3px;
+        border: 1px solid black;
+    }
+}
+
 .productoVentas  {
-    display: flex;
-    flex-direction: column;
+    @include column;
+    @extend .font-tertiary-m;
     &__ordenar {
-        display: flex;
+        @include row; 
         justify-content: space-between;
         margin: 10px;
         label {
-            font-family: 'Pathway Gothic One', sans-serif;
-            font-size: 20px;
-            font-weight: 400;
-            margin: 0px;
-            margin-right: 5px;
+            margin: 0px 5px 0px 0px;
         }
     }
     select {
-        font-family: 'Pathway Gothic One', sans-serif;
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 3px;
-        font-size: 20px;
-        font-weight: 400;
     }
     &__tarjeta {
-        display: flex;
-        flex-wrap: wrap;
+        @include row;
         justify-content: space-evenly;
         div {
             width: 20vw;
@@ -74,23 +78,7 @@
             width: 90%;
             min-width: 200px
         }
-        p {
-            font-size: 18px;
-        }
     }
 }
 
-.aside-filtro {
-    display: none;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0px;
-    margin-right: 5px;
-    i {
-        font-size: 10px;
-        margin-left: 5px;
-        padding: 3px;
-        border: 1px solid black;
-    }
-}
+

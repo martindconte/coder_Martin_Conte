@@ -9,10 +9,8 @@
     background-position: center -14px;
     padding: 35px;
     &__img {
-      display: flex;
-      flex-wrap: wrap;
+      @include row;
       justify-content: space-around;
-      align-items: center;
       img {
         width: 15%;
         min-width: 200px;
@@ -25,8 +23,13 @@
   }
   
   .ofertas-titulo {
+    @include row;
+    justify-content: center;
     h2 {
-      margin: 0px;
+      @extend .font-secondary-xl;
+      font-size: 50px;
+      text-transform: uppercase;
+      color: $color-primary;
     }
     img {
       height: 45px;
@@ -35,12 +38,10 @@
   }
   
   .oportunidades {
-    display: flex;
-    flex-wrap: wrap;
+    @include row;
+    justify-content: space-evenly;
     text-align: center;
     margin: 35px 50px;
-    justify-content: space-evenly;
-    align-items: center;
     a {
       max-width: 200px;
       &:hover {
@@ -51,13 +52,11 @@
   }
   
   .fender-gibson {
-    display: flex;
-    flex-wrap: wrap;
+    @include row;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: $color-secundary;
     padding: 50px 30px;
     margin-bottom: 20px;
-    align-items: center;
     img {
       width: 40vw;
       min-width: 300px;
@@ -65,7 +64,7 @@
   }
   
   .slide-brand {
-    display: flex;
+    @include row;
     justify-content: center;
     margin: 10px;
     img {
@@ -80,7 +79,7 @@
     margin: 50px 20px;
     h3 {
       font-size: 40px;
-      color: black;
+      color: $color-secundary;
       font-weight: 800;
       padding-bottom: 30px;
     }
@@ -90,9 +89,8 @@
       padding-bottom: 10px;
     }
     &__img {
-      display: flex;
+      @include row;
       justify-content: space-evenly;
-      flex-wrap: wrap;
       a {
           width: 18vw;
           min-width: 200px;
@@ -105,38 +103,33 @@
     background-image: url("../multimedia/img/main-prefooter-background2.jpg");
     background-size: 100% 200%;
     background-position: center center;
-    padding: 50px;
-    font-family: "Saira Condensed", sans-serif;
-    color: white;
+    @extend .font-primary-l;
     text-align: center;
-    font-size: 25px;
-    font-weight: bolder;
+    color: $color-primary;
+    padding: 50px;
     input[type="email"] {
-      display: block;
-      font-family: "Saira Condensed", sans-serif;
+      @include block-center (30px);
+      @extend .font-primary-xs;
       text-align: center;
-      font-size: 15px;
-      font-weight: lighter;
       padding: 3px 0px;
       width: 70vw;
       border-radius: 0.75rem;
-      margin: 0 auto;
       border: none;
       outline: none;
-      margin: 30px auto;
     }
     input[type="submit"] {
-      display: block;
-      font-family: "Saira Condensed", sans-serif;
-      font-size: 15px;
+      @include block-center (30px);
+      @extend .font-primary-s;
       font-weight: 800;
+      color: $color-secundary;
       padding: 3px 0px;
       width: 70vw;
       border-radius: 0.75rem;
-      margin: 0 auto;
       border: none;
-      margin: 30px auto;
-      background-color: rgba(255, 255, 255, 0.75);
-      color: black;
+      background-color: $color-primary;
+      &:hover {
+        color: $color-primary;
+        background-color: $color-transparente;
+      }
     }
-  }  
+  }

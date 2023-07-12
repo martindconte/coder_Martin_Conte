@@ -1,0 +1,18 @@
+
+/* ----------------------- MIXINS ------------------------- */ 
+
+@mixin row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin block-center ($margin) {
+    display: block;
+    margin: #{$margin} auto;
+}

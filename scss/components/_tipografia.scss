@@ -23,13 +23,13 @@
     @extend .font-primary-xl;
     font-size: 35px;
     text-align: center;
-    color: $primary-color;
+    color: $color-secundary;
 }
 
 .descripcion {
     @extend .font-primary-m;
     text-align: center;
-    color: $primary-color;
+    color: $color-secundary;
 }
 
 .titulo-producto {
@@ -39,16 +39,4 @@
 .subtitulo-producto {
     @extend .font-primary-l;
     margin-top: 20px;
-}
-
-.ofertas-titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h2 {
-        @extend .font-secondary-xl;
-        font-size: 50px;
-        text-transform: uppercase;
-        color: $color-primary;
-    }
 }

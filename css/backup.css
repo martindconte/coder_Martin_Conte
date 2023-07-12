@@ -92,7 +92,7 @@ input {
 
 /* ------------------ Tipografias -------------------*/
 
-.precio {
+/* .precio {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 35px;
     font-weight: bolder;
@@ -109,9 +109,9 @@ input {
     text-align: center;
     margin: 0;
     color: black;
-}
+} */
 
-.boton {
+/* .boton {
     display: inline-block;
     background-color: #262218;
     font-family: 'Saira Condensed', sans-serif;
@@ -125,7 +125,7 @@ input {
 }
 
 .boton:hover {
-    background-color: #810000; /* Nuevo color al pasar el mouse */
+    background-color: #810000;
   }
 
 .boton-compra {
@@ -142,10 +142,9 @@ input {
 }
 
 .boton-compra:hover {
-    background-color: #0e0088; /* Nuevo color al pasar el mouse */
-  }
+    background-color: #0e0088; } */
 
-.titulo-producto {
+/* .titulo-producto {
     font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 30px;
     font-weight: 800;
@@ -179,7 +178,7 @@ input {
     background: radial-gradient(circle, rgba(150, 30, 30, 1) 0%, rgba(0, 0, 0, 1) 75%);
     font-family: 'Rajdhani', sans-serif;
     padding: 15px;
-}
+} */
 
 /* ---------------------- main  ---------------------*/
 /* 
@@ -738,29 +737,29 @@ input {
 
 /* ----------------------- media query ----------------------*/
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) { */
 
     /* -------------------- header -------------------*/
 
-    .navbar-expand-lg .navbar-collapse {
+    /* .navbar-expand-lg .navbar-collapse {
         justify-content: space-between;
-    }
-
+    } */
+/* 
     .header>.navbar-toggler {
         margin-right: 20px;
-    }
+    } */
 
-    .navbar-nav .dropdown-menu {
+    /* .navbar-nav .dropdown-menu {
         position: absolute;
     }
 
     .navbar-nav {
         font-size: 16px;
-    }
+    } */
 
     /* -------------------- footer -------------------*/
 
-    .footer {
+    /* .footer {
         padding: 20px;
     }
 
@@ -771,21 +770,21 @@ input {
         grid-template-areas:
             "electronica instrumentos teclados"
             "info        contacto     redes";
-    }
+    } */
 
     /* -- --------------- page login -----------------*/
 
-    .login__sesion,
+    /* .login__sesion,
     .login__usuario {
         width: 45%;
     }
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) { */
 
     /* ------------------ index main -----------------*/
 
-    .boton {
+    /* .boton {
         padding: 10px 50px;
         border-radius: 1rem;
     }
@@ -796,28 +795,28 @@ input {
 
     .oportunidades a {
         margin: 20px;
-    }
+    } */
 
     /* -------------------- footer -------------------*/
 
-    .footer h4 a {
+    /* .footer h4 a {
         font-size: 20px;
         padding: 0%;
     }
 
     .footer ul li a {
         font-size: 16px;
-    }
+    } */
 
     /* ------------- poge siantureGibson -------------*/
 
-    .compraGibson__compra {
+    /* .compraGibson__compra {
         display: none;
-    }
+    } */
 
     /* -------------- page catGuitarras -------------*/
 
-    .aside-filtro {
+    /* .aside-filtro {
         display: block;
         position: absolute;
         margin: 0 auto;
@@ -845,32 +844,32 @@ input {
         padding: 10px;
         display: none;
         transition: .5s;
-    }
-}
+    } */
+/* } */
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) { */
 
     /* ------------------ index main -----------------*/
-
+/* 
     .slide-brand img {
         width: 35vw;
         height: 200px;
         padding: 0px 5px;
-    }
+    } */
 
     /* -------------------- footer -------------------*/
-
+/* 
     .footer__grid {
         gap: 20px;
         grid-template-areas:
             "electronica instrumentos teclados"
             "electronica redes        redes"
             "info        contacto     contacto";
-    }
+    } */
 
     /* --------- page signatureGibson main -----------*/
 
-    .compraGibson {
+    /* .compraGibson {
         flex-direction: column;
         padding: 0px;
         margin: 20px;
@@ -898,11 +897,11 @@ input {
 
     .signature-gibson-img img {
         width: 100%;
-    }
+    } */
 
     /* ------------------ page login -----------------*/
 
-    .login {
+    /* .login {
         justify-content: flex-start;
     }
 
@@ -925,20 +924,20 @@ input {
     .login__sesion-registrarse {
         display: block;
         text-align: center;
-    }
-}
+    } */
+/* } */
 
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) { */
 
     /* -------------------- header -------------------*/
 
-    .navbar-brand {
+    /* .navbar-brand {
         font-size: 20px;
-    }
+    } */
 
     /* -- --------------- index main -----------------*/
 
-    .ofertas-titulo {
+    /* .ofertas-titulo {
         margin-bottom: 10px;
     }
 
@@ -949,36 +948,36 @@ input {
     .ofertas-titulo img {
         height: 30px;
         padding: 0px 10px;
-    }
+    } */
 
     /* -------------- page catGuitarras -------------*/
 
-    .asideCompras {
+    /* .asideCompras {
         margin-top: 60px;
-    }
-}
+    } */
+/* } */
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) { */
 
     /* -------------------- header -------------------*/
-
+/* 
     .header {
         padding: 5px;
-    }
+    } */
 
     /* --------- page signatureGibson main -----------*/
-
+/* 
     .signature-gibson {
         font-size: 20px;
     }
 
     .signature-gibson-img img {
         width: 100%;
-    }
+    } */
 
     /* -------------------- footer -------------------*/
 
-    .footer {
+    /* .footer {
         padding: 10px;
     }
 
@@ -993,6 +992,6 @@ input {
             "teclados info"
             "contacto contacto"
             "redes redes";
-    }
+    } */
 
-}
+/* } */

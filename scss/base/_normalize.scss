@@ -27,13 +27,15 @@ a {
     text-decoration: none;
 }
 
-p {
+p, h3 {
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    font-size: 16px; /* QUITAR CLASE DE BOOTSTRAP */
+    font-size: 16px;
+    margin: 0; /* QUITAR CLASE DE BOOTSTRAP */
+    font-weight: normal;
 }
 
 
