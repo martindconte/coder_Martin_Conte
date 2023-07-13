@@ -15,6 +15,11 @@
             font-size: $size;
             font-weight: $weight;
         }
+
+        // @mixin font-type ($fontToUse,$sizeToUse,$weight- ) #{$font-key}-#{$size-name} {
+        //     font-family: $font-value
+
+        // }
     }
 }
 

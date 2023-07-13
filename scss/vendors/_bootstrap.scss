@@ -4,7 +4,7 @@
 /* --------------------- HEADER NAV ---------------------- */ 
 
 .bg-body-tertiary {
-    background: radial-gradient(circle, rgba(150, 30, 30, 1) 0%, rgba(0, 0, 0, 1) 75%);
+    background: $bg-header;
 }
 
 .navbar {
@@ -12,27 +12,23 @@
 }
 
 .navbar-toggler {
-    background-color: white;
+    background-color: $color-primary;
 }
 
 .navbar-brand {
-    color: white;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
+    @extend .font-secondary-xl;
+    color: $color-primary;
     margin: 0px 5px 0px 3px;
 }
 
 .navbar-nav {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 18px;
+    @extend .font-secondary-s;
 }
 
 .navbar-nav .dropdown-menu {
     background-color: #961e1e;
     color: white;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 18px;
+    @extend .font-secondary-s;
 }
 
 .nav-link:hover {
@@ -42,12 +38,12 @@
 }
 
 .dropdown-item {
-    color: white;
+    color: $color-primary;
 }
 
 .dropdown-item:hover {
     font-weight: 800;
-    color: #FFFFFF;
+    color: $color-primary;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
     background-color: transparent;
 }
@@ -64,7 +60,7 @@
 }
 
 input {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $font-secondary;
 }
 
 // ---------------- Boopstrap main ------------------

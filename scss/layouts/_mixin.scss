@@ -16,3 +16,8 @@
     display: block;
     margin: #{$margin} auto;
 }
+
+@mixin size-img ($width, $height) {
+    width: #{$width};
+    height: #{$height};
+}

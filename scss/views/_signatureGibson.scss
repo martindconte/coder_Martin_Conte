@@ -1,14 +1,11 @@
 /* --------------- PAGE SIGNATURE GIBSON ----------------- */
 
 .signature-gibson {
-    display: flex;
-    background-color: black;
-    color: white;
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
+    background-color: $bg-dark;
+    color: $color-primary;
+    @extend .font-primary-xl;
+    @include row;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .compraGibson {
@@ -21,51 +18,44 @@
         text-align: left;
     }
     img {
-        width: 30px;
+        @include size-img (30px,auto);
         border-radius: 50%;
     }
     &__compra {
-        display: flex;
-        flex-direction: column;
+        @include column;
         align-items: center;
         img {
             display: block;
-            width: 60px;
+            @include size-img (60px,auto);
             padding-bottom: 20px;
         }
     }
     &__slide {
         img {
-            height: 450px;
-            width: auto;
+            @include size-img (450px,auto);
         }
     }
 
 }
 
 .mediaVideo {
-    display: flex;
-    flex-direction: column;
+    @include column;
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background-color: black;
+    background-color: $bg-dark;
     &__youtube {
-        width: 80%;
-        height: 50vh;
+        @include size-img(80%,50vh);
     }
     &__spotify {
-        width: 80%;
-        height: 300px;
+        @include size-img (80%,300px);
     }
 }
 
 .signature-gibson-img {
-    display: flex;
+    @include row;
     padding: 20px;
-    background-color: black;
-    flex-wrap: wrap;
-    align-items: center;
+    background-color: $bg-dark;
     justify-content: center;
     margin-top: -150px;
     img {
@@ -74,21 +64,13 @@
 }
 
 .especificaciones {
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 30px;
-    font-weight: 800;
+    @extend .font-tertiary-xl;
     list-style: none;
     padding: 10px;
     h4 {
-        font-family: 'Pathway Gothic One', sans-serif;
-        font-size: 20px;
-        font-weight: 800;
-        margin: 0px;
+        @extend .font-tertiary-l;
     }
     p {
-        font-family: 'Pathway Gothic One', sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        margin-bottom: 0px;
+        @extend .font-tertiary-s;
     }
 }

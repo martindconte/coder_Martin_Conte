@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-p, h3 {
+p, h3, h4 {
   margin: 0;
   padding: 0;
 }
@@ -59,11 +59,10 @@ h2 {
   background-size: 100% 100%;
   background-position: top center;
   padding: 50px;
-  color: white;
+  color: #FFFFFF;
 }
 .footer h4 a {
   font-family: "Saira Condensed", sans-serif;
-  font-size: 25px;
   font-weight: 800;
   color: white;
   padding-right: 10px;
@@ -189,13 +188,13 @@ h2 {
   font-weight: 400;
 }
 
-.font-primary-l, .prefooter, .subtitulo-producto {
+.font-primary-l, .prefooter, .subtitulo-producto, .footer h4 a {
   font-family: "Saira Condensed";
   font-size: 25px;
   font-weight: 600;
 }
 
-.font-primary-xl, .titulo-producto, .precio {
+.font-primary-xl, .signature-gibson, .titulo-producto, .precio {
   font-family: "Saira Condensed";
   font-size: 30px;
   font-weight: 800;
@@ -207,7 +206,7 @@ h2 {
   font-weight: 400;
 }
 
-.font-secondary-s {
+.font-secondary-s, .navbar-nav .dropdown-menu, .navbar-nav {
   font-family: "Rajdhani";
   font-size: 18px;
   font-weight: 400;
@@ -225,7 +224,7 @@ h2 {
   font-weight: 600;
 }
 
-.font-secondary-xl, .login, .ofertas-titulo h2 {
+.font-secondary-xl, .login, .ofertas-titulo h2, .navbar-brand {
   font-family: "Rajdhani";
   font-size: 30px;
   font-weight: 800;
@@ -237,7 +236,7 @@ h2 {
   font-weight: 400;
 }
 
-.font-tertiary-s {
+.font-tertiary-s, .especificaciones p {
   font-family: "Pathway Gothic One";
   font-size: 18px;
   font-weight: 400;
@@ -249,13 +248,13 @@ h2 {
   font-weight: 400;
 }
 
-.font-tertiary-l {
+.font-tertiary-l, .especificaciones h4 {
   font-family: "Pathway Gothic One";
   font-size: 25px;
   font-weight: 600;
 }
 
-.font-tertiary-xl, .asideCompras h2 {
+.font-tertiary-xl, .especificaciones, .asideCompras h2 {
   font-family: "Pathway Gothic One";
   font-size: 30px;
   font-weight: 800;
@@ -288,27 +287,17 @@ h2 {
 }
 
 .navbar-toggler {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 
 .navbar-brand {
-  color: white;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
+  color: #FFFFFF;
   margin: 0px 5px 0px 3px;
-}
-
-.navbar-nav {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
 }
 
 .navbar-nav .dropdown-menu {
   background-color: #961e1e;
   color: white;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
 }
 
 .nav-link:hover {
@@ -318,7 +307,7 @@ h2 {
 }
 
 .dropdown-item {
-  color: white;
+  color: #FFFFFF;
 }
 
 .dropdown-item:hover {
@@ -660,14 +649,12 @@ input {
 
 /* --------------- PAGE SIGNATURE GIBSON ----------------- */
 .signature-gibson {
+  background-color: #000000;
+  color: #FFFFFF;
   display: flex;
-  background-color: black;
-  color: white;
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .compraGibson {
@@ -682,6 +669,7 @@ input {
 }
 .compraGibson img {
   width: 30px;
+  height: auto;
   border-radius: 50%;
 }
 .compraGibson__compra {
@@ -692,11 +680,12 @@ input {
 .compraGibson__compra img {
   display: block;
   width: 60px;
+  height: auto;
   padding-bottom: 20px;
 }
 .compraGibson__slide img {
-  height: 450px;
-  width: auto;
+  width: 450px;
+  height: auto;
 }
 
 .mediaVideo {
@@ -705,7 +694,7 @@ input {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: black;
+  background-color: #000000;
 }
 .mediaVideo__youtube {
   width: 80%;
@@ -718,10 +707,10 @@ input {
 
 .signature-gibson-img {
   display: flex;
-  padding: 20px;
-  background-color: black;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #000000;
   justify-content: center;
   margin-top: -150px;
 }
@@ -730,27 +719,12 @@ input {
 }
 
 .especificaciones {
-  font-family: "Pathway Gothic One", sans-serif;
-  font-size: 30px;
-  font-weight: 800;
   list-style: none;
   padding: 10px;
 }
-.especificaciones h4 {
-  font-family: "Pathway Gothic One", sans-serif;
-  font-size: 20px;
-  font-weight: 800;
-  margin: 0px;
-}
-.especificaciones p {
-  font-family: "Pathway Gothic One", sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  margin-bottom: 0px;
-}
-
 /* ---------------------- MEDIA QUERY -----------------------*/
 @media screen and (max-width: 992px) {
+  /* ------------------ BOOTSTRAP ------------------*/
   /* -------------------- header -------------------*/
   .navbar-expand-lg .navbar-collapse {
     justify-content: space-between;
