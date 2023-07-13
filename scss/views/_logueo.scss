@@ -2,24 +2,23 @@
 
 .login {
     background-image: url(../multimedia/img/login-background-.png);
-    background-color: #e2e2e2;
+    background-color: $bg-pageLogin;
     background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 30px;
+    @extend .font-secondary-xl;
     font-weight: 600;
-    display: flex;
-    flex-wrap: wrap;
+    @include row;
+    align-items: normal;
     justify-content: center;
     padding: 30px 0px;
+    height: calc(100vh - 117px);
     input {
-        font-size: 16px;
-        font-weight: 400;
+        @extend .font-secondary-xs;
         padding: 5px;
         margin-bottom: 10px;
         border: none;
-        background: transparent;
+        background: $color-transparente;
         box-shadow: -3px 9px 20px 2px #00000080;
         transition: .3s ease;
         &:focus {
@@ -28,8 +27,8 @@
         }
         &[type=submit] {
             border: none;
-            background-color: rgb(54, 54, 54);
-            color: white;
+            background-color: $bg-boton;
+            color: $color-primary;
             padding: 5px;
             margin: 10px 0px;
             border-radius: .5rem;
@@ -40,8 +39,7 @@
         padding: 5px 0px;
     }
     &__sesion {
-        display: flex;
-        flex-direction: column;
+        @include column;
         padding-right: 40px;
         width: 30%;
         border-right: 2px solid black;
@@ -49,36 +47,30 @@
             text-align: right;
             font-weight: 800;
             padding: 10px 0px;
-            margin: 0px;
         }
         form {
-            display: flex;
-            flex-direction: column;
-            margin: 0px;
+            @include column;
         }
         &-registrarse {
+            @extend .font-secondary-m;
+            font-weight: 600;
             display: none;
         }
     }
     &__usuario {
-        display: flex;
-        flex-direction: column;
+        @include column;
         margin-left: 40px;
         width: 30%;
         p {
             text-align: left;
             font-weight: 800;
             padding: 10px 0px;
-            margin: 0px;
         }
         form {
-            display: flex;
-            flex-direction: column;
-            margin: 0px;
+            @include column;
         }
         &__check {
-            display: flex;
-            align-items: center;
+            @include row;
             gap: 20px;
             input[type=checkbox] {
                 margin: 0px;

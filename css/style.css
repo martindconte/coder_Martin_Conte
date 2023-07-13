@@ -201,7 +201,7 @@ h2 {
   font-weight: 800;
 }
 
-.font-secondary-xs {
+.font-secondary-xs, .login input {
   font-family: "Rajdhani";
   font-size: 16px;
   font-weight: 400;
@@ -213,7 +213,7 @@ h2 {
   font-weight: 400;
 }
 
-.font-secondary-m {
+.font-secondary-m, .login__sesion-registrarse {
   font-family: "Rajdhani";
   font-size: 20px;
   font-weight: 400;
@@ -225,7 +225,7 @@ h2 {
   font-weight: 600;
 }
 
-.font-secondary-xl, .ofertas-titulo h2 {
+.font-secondary-xl, .login, .ofertas-titulo h2 {
   font-family: "Rajdhani";
   font-size: 30px;
   font-weight: 800;
@@ -580,17 +580,16 @@ input {
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
-  font-family: "Rajdhani", sans-serif;
-  font-size: 30px;
   font-weight: 600;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  align-items: normal;
   justify-content: center;
   padding: 30px 0px;
+  height: calc(100vh - 117px);
 }
 .login input {
-  font-size: 16px;
-  font-weight: 400;
   padding: 5px;
   margin-bottom: 10px;
   border: none;
@@ -604,8 +603,8 @@ input {
 }
 .login input[type=submit] {
   border: none;
-  background-color: rgb(54, 54, 54);
-  color: white;
+  background-color: #262218;
+  color: #FFFFFF;
   padding: 5px;
   margin: 10px 0px;
   border-radius: 0.5rem;
@@ -625,14 +624,13 @@ input {
   text-align: right;
   font-weight: 800;
   padding: 10px 0px;
-  margin: 0px;
 }
 .login__sesion form {
   display: flex;
   flex-direction: column;
-  margin: 0px;
 }
 .login__sesion-registrarse {
+  font-weight: 600;
   display: none;
 }
 .login__usuario {
@@ -645,16 +643,15 @@ input {
   text-align: left;
   font-weight: 800;
   padding: 10px 0px;
-  margin: 0px;
 }
 .login__usuario form {
   display: flex;
   flex-direction: column;
-  margin: 0px;
 }
 .login__usuario__check {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .login__usuario__check input[type=checkbox] {
@@ -778,6 +775,9 @@ input {
     grid-template-areas: "electronica instrumentos teclados" "info        contacto     redes";
   }
   /* -- --------------- page login -----------------*/
+  .login input {
+    background-color: #e2e2e2;
+  }
   .login__sesion, .login__usuario {
     width: 45%;
   }
@@ -886,6 +886,7 @@ input {
   /* ------------------ page login -----------------*/
   .login {
     justify-content: flex-start;
+    height: auto;
   }
   .login__sesion {
     width: 100%;
