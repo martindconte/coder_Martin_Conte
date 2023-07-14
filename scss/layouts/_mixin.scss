@@ -21,3 +21,9 @@
     width: #{$width};
     height: #{$height};
 }
+
+@mixin breakpoint-max ($value) {
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}

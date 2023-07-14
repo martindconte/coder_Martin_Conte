@@ -1,6 +1,8 @@
+@import '../layouts/grid';
+
 /* ---------------------- MEDIA QUERY -----------------------*/
 
-@media screen and (max-width: 992px) {
+@include breakpoint-max ($screen-lg-max) {
 
     /* ------------------ BOOTSTRAP ------------------*/
     /* -------------------- header -------------------*/
@@ -27,12 +29,12 @@
         padding: 20px;
 
         &__grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            grid-template-areas:
-                "electronica instrumentos teclados"
-                "info        contacto     redes";
+            @include grid-equal (3, 1fr) {
+                gap: 30px;
+                grid-template-areas:
+                    "electronica instrumentos teclados"
+                    "info        contacto     redes";
+            }
         }
     }
 
@@ -42,6 +44,7 @@
         input {
             background-color: $bg-pageLogin;
         }
+
         &__sesion,
         &__usuario {
             width: 45%;
@@ -49,7 +52,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@include breakpoint-max ($screen-md-max) {
 
     /* ------------------ index main -----------------*/
 
@@ -106,8 +109,7 @@
 
     .aside-filtro {
         display: block;
-        position: absolute;
-        margin: 0 auto;
+        @include block-center (0px);
         margin: 10px;
 
         &:hover+.asideCompras {
@@ -135,7 +137,8 @@
     }
 }
 
-@media screen and (max-width: 576px) {
+@include breakpoint-max ($screen-sm-max) {
+// @media screen and (max-width: 576px) {
 
     /* ------------------ index main -----------------*/
 
@@ -144,16 +147,19 @@
     }
 
     .slide-brand img {
-        width: 35vw;
-        height: 200px;
+        @include size-img (35vw,200px);
+        // width: 35vw;
+        // height: 200px;
         padding: 0px 5px;
     }
 
     .ofertas-titulo {
         margin-bottom: 10px;
+
         h2 {
             font-size: 40px;
         }
+
         img {
             height: 30px;
             padding: 0px 10px;
@@ -180,13 +186,15 @@
         margin: 20px;
         justify-content: center;
         align-items: center;
+
         p {
             text-align: center;
         }
+
         img {
             display: block;
             margin: 0 auto;
-        }   
+        }
     }
 
 
@@ -196,6 +204,7 @@
 
     .signature-gibson-img {
         flex-direction: column;
+
         img {
             width: 100%;
         }
@@ -206,19 +215,23 @@
     .login {
         justify-content: flex-start;
         height: auto;
+
         &__sesion {
             width: 100%;
             border: none;
             padding: 0px;
             margin: 0px 40px 20px 20px;
+
             p {
                 text-align: left;
             }
+
             &-registrarse {
                 display: block;
                 text-align: center;
             }
         }
+
         &__usuario {
             width: 100%;
             margin: 50px 40px 20px 20px;
@@ -226,7 +239,8 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@include breakpoint-max ($screen-xs-max) {
+// @media screen and (max-width: 425px) {
 
     /* -------------------- header -------------------*/
 
@@ -238,9 +252,11 @@
 
     .ofertas-titulo {
         margin-bottom: 10px;
+
         h2 {
             font-size: 30px;
         }
+
         img {
             height: 30px;
             padding: 0px 10px;
@@ -254,12 +270,14 @@
     }
 }
 
-@media screen and (max-width: 320px) {
+@include breakpoint-max ($screen-xxs-max) {
+// @media screen and (max-width: 320px) {
 
     /* --------- page signatureGibson main -----------*/
 
     .signature-gibson {
         font-size: 20px;
+
         &-img {
             img {
                 width: 100%;
@@ -271,6 +289,7 @@
 
     .footer {
         padding: 10px;
+
         &__grid {
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
@@ -279,6 +298,7 @@
                 "contacto contacto"
                 "redes redes";
         }
+
         i {
             font-size: 16px;
         }

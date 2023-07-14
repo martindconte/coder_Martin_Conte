@@ -27,7 +27,7 @@
 
 .navbar-nav .dropdown-menu {
     background-color: #961e1e;
-    color: white;
+    color: $color-primary;
     @extend %font-secondary-s;
 }
 
@@ -49,14 +49,14 @@
 }
 
 .btn-outline-success {
-    --bs-btn-color: #ffffff;
-    --bs-btn-border-color: #FFFFFF;
+    --bs-btn-color: $color-primary;
+    --bs-btn-border-color: $color-primary;
 }
 
 .btn:hover {
     color: #000;
-    background-color: #ffffff;
-    border-color: #ffffff;
+    background-color: $color-primary;
+    border-color: $color-primary;
 }
 
 input {
@@ -66,5 +66,5 @@ input {
 // ---------------- Boopstrap main ------------------
 
 .carousel {
-    background-color: black;
+    background-color: $color-secundary;
 }

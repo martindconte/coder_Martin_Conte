@@ -2,3 +2,8 @@
 
 /* ------------------------ GRID ------------------------- */ 
 
+@mixin grid-equal ($cant,$size) {
+    display: grid;
+    grid-template-columns: repeat(#{$cant},#{$size});
+    @content
+}

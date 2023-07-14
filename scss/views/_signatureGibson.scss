@@ -32,10 +32,9 @@
     }
     &__slide {
         img {
-            @include size-img (450px,auto);
+            @include size-img (auto,450px);
         }
     }
-
 }
 
 .mediaVideo {

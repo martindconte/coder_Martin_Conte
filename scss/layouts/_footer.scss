@@ -1,4 +1,6 @@
 
+@import 'grid';
+
 /* ----------------------- FOOTER ------------------------ */ 
 
 .footer {
@@ -13,7 +15,7 @@
             // font-family: 'Saira Condensed', sans-serif;
             // font-size: 25px;
             // font-weight: 800;
-            color: white;
+            color: $color-primary;
             padding-right: 10px;
         }
     }
@@ -24,14 +26,15 @@
             list-style: none;
             a {
                 list-style: none;
-                font-family: 'Saira Condensed', sans-serif;
-                font-size: 20px;
-                font-weight: normal;
-                color: white;
+                @extend %font-primary-m;
+                // font-family: 'Saira Condensed', sans-serif;
+                // font-size: 20px;
+                // font-weight: normal;
+                color: $color-primary;
                 text-decoration: none;
                 &:hover {
                     font-weight: 800;
-                    color: #FFFFFF;
+                    color: $color-primary;
                     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;                
                 }
             }
@@ -41,12 +44,12 @@
         font-size: 30px;
     }
     &__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @include grid-equal (4,1fr) {
         gap: 5px;
         grid-template-areas:
             "electronica instrumentos teclados info"
-            "electronica instrumentos redes contacto";
+            "electronica instrumentos redes    contacto";
+        }
     }
     &__electronica {
         grid-area: electronica;

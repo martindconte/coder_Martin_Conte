@@ -21,6 +21,8 @@
             font-weight: $weight;
         }
 
+
+        // INTENTO DE MIXIN QUE NO FUNCIONO. DA ERROR: NO SE PUEDE CREAR UN MIXIN EN UN @EACH
         // @mixin font-type ($fontToUse, $sizeToUse, $weightToUse) {
         //     @if $fontToUse == $font-value {
         //         font-family: #{$fontToUse};
@@ -56,4 +58,10 @@
 .subtitulo-producto {
     @extend %font-primary-l;
     margin-top: 20px;
+}
+
+.linkActivo {
+    font-weight: 800;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 }

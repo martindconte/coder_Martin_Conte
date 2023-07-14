@@ -53,6 +53,7 @@ h2 {
 /* ------------------- MAPS DE COLORES ------------------- */
 /* ----------------------- FONTS ------------------------- */
 /* ----------------------- LAYOUT ------------------------ */
+/* ------------------------ GRID ------------------------- */
 /* ----------------------- FOOTER ------------------------ */
 .footer {
   background-image: url("../multimedia/img/main-footer-background2.jpg");
@@ -62,7 +63,7 @@ h2 {
   color: #FFFFFF;
 }
 .footer h4 a {
-  color: white;
+  color: #FFFFFF;
   padding-right: 10px;
 }
 .footer ul {
@@ -74,10 +75,7 @@ h2 {
 }
 .footer ul li a {
   list-style: none;
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
 }
 .footer ul li a:hover {
@@ -90,9 +88,9 @@ h2 {
 }
 .footer__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 5px;
-  grid-template-areas: "electronica instrumentos teclados info" "electronica instrumentos redes contacto";
+  grid-template-areas: "electronica instrumentos teclados info" "electronica instrumentos redes    contacto";
 }
 .footer__electronica {
   grid-area: electronica;
@@ -123,6 +121,8 @@ h2 {
 /* ----------------------- MIXINS ------------------------- */
 /* ---------------------- UTILITIES ---------------------- */
 /* ---------------------- VARIABLES ---------------------- */
+/* ------------------------ FONTS ------------------------ */
+/* --------------------- BRACKPOINTS --------------------- */
 /* --------------------- COMPONENTS ---------------------- */
 /* ----------------------- BOTONES ----------------------- */
 /* ---------------------- COLORES ------------------------ */
@@ -168,6 +168,8 @@ h2 {
 
 /* --------------------- TIPOGRAFIAS --------------------- */
 /* ---------------------- VARIABLES ---------------------- */
+/* ------------------------ FONTS ------------------------ */
+/* --------------------- BRACKPOINTS --------------------- */
 .prefooter input[type=email] {
   font-family: "Saira Condensed";
   font-size: 16px;
@@ -180,7 +182,7 @@ h2 {
   font-weight: 400;
 }
 
-.descripcion, .boton, .boton-compra {
+.descripcion, .footer ul li a, .boton, .boton-compra {
   font-family: "Saira Condensed";
   font-size: 20px;
   font-weight: 400;
@@ -261,6 +263,12 @@ h2 {
   margin-top: 20px;
 }
 
+.linkActivo {
+  font-weight: 800;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
 /* ----------------------- VENDORS ----------------------- */
 /* ---------------------- BOOTSTRAP ---------------------- */
 /* --------------------- HEADER NAV ---------------------- */
@@ -283,7 +291,7 @@ h2 {
 
 .navbar-nav .dropdown-menu {
   background-color: #961e1e;
-  color: white;
+  color: #FFFFFF;
 }
 
 .nav-link:hover {
@@ -304,14 +312,14 @@ h2 {
 }
 
 .btn-outline-success {
-  --bs-btn-color: #ffffff;
-  --bs-btn-border-color: #FFFFFF;
+  --bs-btn-color: $color-primary;
+  --bs-btn-border-color: $color-primary;
 }
 
 .btn:hover {
   color: #000;
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 input {
@@ -319,7 +327,7 @@ input {
 }
 
 .carousel {
-  background-color: black;
+  background-color: #000000;
 }
 
 /* ------------------------ VIEWS ------------------------ */
@@ -670,8 +678,8 @@ input {
   padding-bottom: 20px;
 }
 .compraGibson__slide img {
-  width: 450px;
-  height: auto;
+  width: auto;
+  height: 450px;
 }
 
 .mediaVideo {
@@ -708,7 +716,7 @@ input {
   list-style: none;
   padding: 10px;
 }
-/* ---------------------- MEDIA QUERY -----------------------*/
+/* ------------------------ GRID ------------------------- */ /* ---------------------- MEDIA QUERY -----------------------*/
 @media screen and (max-width: 992px) {
   /* ------------------ BOOTSTRAP ------------------*/
   /* -------------------- header -------------------*/
@@ -769,8 +777,8 @@ input {
   /* -------------- page catGuitarras -------------*/
   .aside-filtro {
     display: block;
-    position: absolute;
-    margin: 0 auto;
+    display: block;
+    margin: 0px auto;
     margin: 10px;
   }
   .aside-filtro:hover + .asideCompras {
