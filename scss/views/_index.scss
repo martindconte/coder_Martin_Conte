@@ -26,7 +26,7 @@
     @include row;
     justify-content: center;
     h2 {
-      @extend .font-secondary-xl;
+      @extend %font-secondary-xl;
       font-size: 50px;
       text-transform: uppercase;
       color: $color-primary;
@@ -103,13 +103,13 @@
     background-image: url("../multimedia/img/main-prefooter-background2.jpg");
     background-size: 100% 200%;
     background-position: center center;
-    @extend .font-primary-l;
+    @extend %font-primary-l;
     text-align: center;
     color: $color-primary;
     padding: 50px;
     input[type="email"] {
       @include block-center (30px);
-      @extend .font-primary-xs;
+      @extend %font-primary-xs;
       text-align: center;
       padding: 3px 0px;
       width: 70vw;
@@ -119,7 +119,7 @@
     }
     input[type="submit"] {
       @include block-center (30px);
-      @extend .font-primary-s;
+      @extend %font-primary-s;
       font-weight: 800;
       color: $color-secundary;
       padding: 3px 0px;

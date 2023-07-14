@@ -7,7 +7,7 @@
 
 %boton {
     display: block;
-    @extend .font-primary-m;
+    @extend %font-primary-m;
     color: $color-primary;
     transition: 0.3s ease;
     border-radius: 1.5rem;

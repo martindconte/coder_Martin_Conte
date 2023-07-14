@@ -6,7 +6,7 @@
     background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
-    @extend .font-secondary-xl;
+    @extend %font-secondary-xl;
     font-weight: 600;
     @include row;
     align-items: normal;
@@ -14,7 +14,7 @@
     padding: 30px 0px;
     height: calc(100vh - 117px);
     input {
-        @extend .font-secondary-xs;
+        @extend %font-secondary-xs;
         padding: 5px;
         margin-bottom: 10px;
         border: none;
@@ -52,7 +52,7 @@
             @include column;
         }
         &-registrarse {
-            @extend .font-secondary-m;
+            @extend %font-secondary-m;
             font-weight: 600;
             display: none;
         }

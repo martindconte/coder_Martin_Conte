@@ -9,10 +9,10 @@
     color: $color-primary;
     h4 {
         a {
-            @extend .font-primary-l;
-            font-family: 'Saira Condensed', sans-serif;
+            @extend %font-primary-l;
+            // font-family: 'Saira Condensed', sans-serif;
             // font-size: 25px;
-            font-weight: 800;
+            // font-weight: 800;
             color: white;
             padding-right: 10px;
         }

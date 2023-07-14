@@ -191,8 +191,7 @@
 
 
     .boton {
-        display: block;
-        margin: 0 auto;
+        @include block-center (0px);
     }
 
     .signature-gibson-img {

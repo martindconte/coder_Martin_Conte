@@ -10,38 +10,50 @@
         $size: map-get($size-value, size);
         $weight: map-get($size-value, weight);
 
-        .#{$font-key}-#{$size-name} {
+        // .#{$font-key}-#{$size-name} {
+        //     font-family: $font-value;
+        //     font-size: $size;
+        //     font-weight: $weight;
+        // }
+        %#{$font-key}-#{$size-name} {
             font-family: $font-value;
             font-size: $size;
             font-weight: $weight;
         }
 
-        // @mixin font-type ($fontToUse,$sizeToUse,$weight- ) #{$font-key}-#{$size-name} {
-        //     font-family: $font-value
-
+        // @mixin font-type ($fontToUse, $sizeToUse, $weightToUse) {
+        //     @if $fontToUse == $font-value {
+        //         font-family: #{$fontToUse};
+        //     }
+        //     @if $sizeToUse == $size {
+        //         font-size: #{$fontToUse};
+        //     }
+        //     @if $weightToUse == $weight {
+        //         font-weight: #{$weightToUse};
+        //     }
         // }
     }
 }
 
 
 .precio {
-    @extend .font-primary-xl;
+    @extend %font-primary-xl;
     font-size: 35px;
     text-align: center;
     color: $color-secundary;
 }
 
 .descripcion {
-    @extend .font-primary-m;
+    @extend %font-primary-m;
     text-align: center;
     color: $color-secundary;
 }
 
 .titulo-producto {
-    @extend .font-primary-xl;
+    @extend %font-primary-xl;
 }
 
 .subtitulo-producto {
-    @extend .font-primary-l;
+    @extend %font-primary-l;
     margin-top: 20px;
 }

@@ -3,7 +3,7 @@
 .signature-gibson {
     background-color: $bg-dark;
     color: $color-primary;
-    @extend .font-primary-xl;
+    @extend %font-primary-xl;
     @include row;
     justify-content: space-evenly;
 }
@@ -64,13 +64,13 @@
 }
 
 .especificaciones {
-    @extend .font-tertiary-xl;
+    @extend %font-tertiary-xl;
     list-style: none;
     padding: 10px;
     h4 {
-        @extend .font-tertiary-l;
+        @extend %font-tertiary-l;
     }
     p {
-        @extend .font-tertiary-s;
+        @extend %font-tertiary-s;
     }
 }

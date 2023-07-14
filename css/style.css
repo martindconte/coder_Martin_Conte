@@ -62,8 +62,6 @@ h2 {
   color: #FFFFFF;
 }
 .footer h4 a {
-  font-family: "Saira Condensed", sans-serif;
-  font-weight: 800;
   color: white;
   padding-right: 10px;
 }
@@ -170,91 +168,79 @@ h2 {
 
 /* --------------------- TIPOGRAFIAS --------------------- */
 /* ---------------------- VARIABLES ---------------------- */
-.font-primary-xs, .prefooter input[type=email] {
+.prefooter input[type=email] {
   font-family: "Saira Condensed";
   font-size: 16px;
   font-weight: 400;
 }
 
-.font-primary-s, .prefooter input[type=submit] {
+.prefooter input[type=submit] {
   font-family: "Saira Condensed";
   font-size: 18px;
   font-weight: 400;
 }
 
-.font-primary-m, .descripcion, .boton, .boton-compra {
+.descripcion, .boton, .boton-compra {
   font-family: "Saira Condensed";
   font-size: 20px;
   font-weight: 400;
 }
 
-.font-primary-l, .prefooter, .subtitulo-producto, .footer h4 a {
+.prefooter, .subtitulo-producto, .footer h4 a {
   font-family: "Saira Condensed";
   font-size: 25px;
   font-weight: 600;
 }
 
-.font-primary-xl, .signature-gibson, .titulo-producto, .precio {
+.signature-gibson, .titulo-producto, .precio {
   font-family: "Saira Condensed";
   font-size: 30px;
   font-weight: 800;
 }
 
-.font-secondary-xs, .login input {
+.login input {
   font-family: "Rajdhani";
   font-size: 16px;
   font-weight: 400;
 }
 
-.font-secondary-s, .navbar-nav .dropdown-menu, .navbar-nav {
+.navbar-nav .dropdown-menu, .navbar-nav {
   font-family: "Rajdhani";
   font-size: 18px;
   font-weight: 400;
 }
 
-.font-secondary-m, .login__sesion-registrarse {
+.login__sesion-registrarse {
   font-family: "Rajdhani";
   font-size: 20px;
   font-weight: 400;
 }
 
-.font-secondary-l {
-  font-family: "Rajdhani";
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.font-secondary-xl, .login, .ofertas-titulo h2, .navbar-brand {
+.login, .ofertas-titulo h2, .navbar-brand {
   font-family: "Rajdhani";
   font-size: 30px;
   font-weight: 800;
 }
 
-.font-tertiary-xs {
-  font-family: "Pathway Gothic One";
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.font-tertiary-s, .especificaciones p {
+.especificaciones p {
   font-family: "Pathway Gothic One";
   font-size: 18px;
   font-weight: 400;
 }
 
-.font-tertiary-m, .productoVentas, .aside-filtro, .asideCompras h3, .asideCompras h4, .asideCompras__cantCuerdas {
+.productoVentas, .aside-filtro, .asideCompras h3, .asideCompras h4, .asideCompras__cantCuerdas {
   font-family: "Pathway Gothic One";
   font-size: 20px;
   font-weight: 400;
 }
 
-.font-tertiary-l, .especificaciones h4 {
+.especificaciones h4 {
   font-family: "Pathway Gothic One";
   font-size: 25px;
   font-weight: 600;
 }
 
-.font-tertiary-xl, .especificaciones, .asideCompras h2 {
+.especificaciones, .asideCompras h2 {
   font-family: "Pathway Gothic One";
   font-size: 30px;
   font-weight: 800;
@@ -849,7 +835,7 @@ input {
   }
   .boton {
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
   }
   .signature-gibson-img {
     flex-direction: column;

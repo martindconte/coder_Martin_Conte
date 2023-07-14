@@ -11,10 +11,9 @@
     width: 20vw;
     min-width: 200px;
     h2 {
-        @extend .font-tertiary-xl;
+        @extend %font-tertiary-xl;
         font-size: 40px;
     }
-
 
     &__check {
         margin-bottom: 10px;
@@ -29,7 +28,7 @@
         }
     }
     h3, h4, &__cantCuerdas {
-        @extend .font-tertiary-m;
+        @extend %font-tertiary-m;
         margin: 10px 0px;
     }
 }
@@ -39,7 +38,7 @@
 
 .aside-filtro {
     display: none;
-    @extend .font-tertiary-m;
+    @extend %font-tertiary-m;
     margin: 0px;
     margin-right: 5px;
     i {
@@ -52,7 +51,7 @@
 
 .productoVentas  {
     @include column;
-    @extend .font-tertiary-m;
+    @extend %font-tertiary-m;
     &__ordenar {
         @include row; 
         justify-content: space-between;

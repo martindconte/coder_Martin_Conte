@@ -16,19 +16,19 @@
 }
 
 .navbar-brand {
-    @extend .font-secondary-xl;
+    @extend %font-secondary-xl;
     color: $color-primary;
     margin: 0px 5px 0px 3px;
 }
 
 .navbar-nav {
-    @extend .font-secondary-s;
+    @extend %font-secondary-s;
 }
 
 .navbar-nav .dropdown-menu {
     background-color: #961e1e;
     color: white;
-    @extend .font-secondary-s;
+    @extend %font-secondary-s;
 }
 
 .nav-link:hover {
