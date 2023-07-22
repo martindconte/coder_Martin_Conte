@@ -10,30 +10,11 @@
         $size: map-get($size-value, size);
         $weight: map-get($size-value, weight);
 
-        // .#{$font-key}-#{$size-name} {
-        //     font-family: $font-value;
-        //     font-size: $size;
-        //     font-weight: $weight;
-        // }
         %#{$font-key}-#{$size-name} {
             font-family: $font-value;
             font-size: $size;
             font-weight: $weight;
         }
-
-
-        // INTENTO DE MIXIN QUE NO FUNCIONO. DA ERROR: NO SE PUEDE CREAR UN MIXIN EN UN @EACH
-        // @mixin font-type ($fontToUse, $sizeToUse, $weightToUse) {
-        //     @if $fontToUse == $font-value {
-        //         font-family: #{$fontToUse};
-        //     }
-        //     @if $sizeToUse == $size {
-        //         font-size: #{$fontToUse};
-        //     }
-        //     @if $weightToUse == $weight {
-        //         font-weight: #{$weightToUse};
-        //     }
-        // }
     }
 }
 
