@@ -53,6 +53,7 @@ h2 {
 /* ----------------------- FONTS ------------------------- */
 /* ----------------------- LAYOUT ------------------------ */
 /* ------------------------ GRID ------------------------- */
+/* ----------------------- MIXINS ------------------------- */
 /* ----------------------- FOOTER ------------------------ */
 .footer {
   background-image: url("../multimedia/img/main-footer-background2.jpg");
@@ -75,6 +76,8 @@ h2 {
 }
 .footer ul li a {
   list-style: none;
+  display: inline-flex;
+  gap: 10px;
   color: #FFFFFF;
   text-decoration: none;
 }

@@ -1,5 +1,6 @@
 
 @import 'grid';
+@import 'mixin';
 
 /* ----------------------- FOOTER ------------------------ */ 
 
@@ -24,6 +25,8 @@
             list-style: none;
             a {
                 list-style: none;
+                display: inline-flex;
+                gap: 10px;
                 @extend %font-primary-m;
                 color: $color-primary;
                 text-decoration: none;
