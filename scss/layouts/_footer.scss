@@ -6,6 +6,7 @@
 .footer {
     background-image: url('../multimedia/img/main-footer-background2.jpg');
     background-size: 100% 100%;
+    opacity: 0.9;
     background-position: top center;
     padding: 50px;
     color: $color-primary;
@@ -29,7 +30,7 @@
                 &:hover {
                     font-weight: 800;
                     color: $color-primary;
-                    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;                
+                    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #a70061, 0 0 30px #a70061, 0 0 40px #a70061, 0 0 55px #a70061, 0 0 75px #a70061;                
                 }
             }
         }
