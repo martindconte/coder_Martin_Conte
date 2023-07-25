@@ -12,9 +12,6 @@
     h4 {
         a {
             @extend %font-primary-l;
-            // font-family: 'Saira Condensed', sans-serif;
-            // font-size: 25px;
-            // font-weight: 800;
             color: $color-primary;
             padding-right: 10px;
         }
@@ -27,9 +24,6 @@
             a {
                 list-style: none;
                 @extend %font-primary-m;
-                // font-family: 'Saira Condensed', sans-serif;
-                // font-size: 20px;
-                // font-weight: normal;
                 color: $color-primary;
                 text-decoration: none;
                 &:hover {
